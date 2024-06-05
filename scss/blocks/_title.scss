@@ -1,0 +1,42 @@
+.title {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	&_12 {
+		font-size: 12px;
+	}
+	&_14 {
+		font-size: 14px;
+	}
+	&_18 {
+		font-size: 18px;
+	}
+	&_20 {
+		font-size: 20px;
+	}
+	&_24 {
+		font-size: 24px;
+	}
+	&_32 {
+		font-size: 32px;
+	}
+	&_40 {
+		font-size: 40px;
+	}
+	&_46 {
+		font-size: 46px;
+	}
+}
+
+.light {
+	font-weight: 300;
+}
+.medium {
+	font-weight: 500;
+}
+.semi-bold {
+	font-weight: 600;
+}
+.bold {
+	font-weight: 700;
+}
