@@ -61,6 +61,14 @@ survey_buttons.forEach(button => {
                 }
             }
         }
+        if (next.includes('3-1')) {
+            let radios = document.querySelectorAll('input[name="material"]');
+            for (let radio of radios) {
+                if (radio.checked && radio.value == 'Мягкая мебель') {
+                    next = next.slice(0, -1) + '2';
+                }
+            }
+        }
         
         document.querySelector(`#${next}`).style.display = 'flex';
     });

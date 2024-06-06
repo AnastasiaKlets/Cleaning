@@ -105,6 +105,15 @@
             padding: 27.61% 0;
         }
     }
+    &_body.quantity {
+        margin-top: 22px;
+        .survey_body_item {
+            width: 20.32%;
+        }
+        .survey_body_item_img {
+            padding: 31.35% 0;
+        }
+    }
     &_input {
         width: calc(68.31% - 36px);
         height: 18px;
@@ -155,6 +164,12 @@
     &_body.six {
         .survey_form_view {
             width: 12.43%;
+            height: 22.52%;
+        }
+    }
+    &_body.quantity {
+        .survey_form_view {
+            width: 14.12%;
             height: 22.52%;
         }
     }
