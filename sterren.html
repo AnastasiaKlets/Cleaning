@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dino EcoRoom</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <button data-survey class="button button_green">Узнать стоимость</button>
+	<section class="survey">
+        <div class="survey_modal">
+            <div class="survey_form">
+                <div id="survey_wrapper_1" class="survey_wrapper">
+                    <div class="survey_content">
+                        <div class="survey_header">
+                            <div class="title title_14">Вы отвечаете на 1 <span class="semi-bold">вопрос</span> из 4</div>
+                            <progress class="survey_progress" max="100" value="25"></progress>
+                            <div class="title title_24 semi-bold">Какую уборку хотите?</div>
+                            <div class="title title_16">Расскажите о квартире и что нужно убрать</div>
+                        </div>
+                        <div class="survey_body">
+                            <label for="survey_form_radio_1-1" class="survey_body_item">
+                                <div class="survey_body_item_img">
+                                    <img src="img/survey/type_1.png" alt="type">
+                                    <input type="radio" name="type" id="survey_form_radio_1-1" class="survey_form_radio" value="Влажная уборка" checked required>
+                                    <span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+                                </div>
+                                <div class="title title_16">Влажная уборка</div>
+                            </label>
+                            <label for="survey_form_radio_1-2" class="survey_body_item">
+                                <div class="survey_body_item_img">
+                                    <img src="img/survey/type_2.png" alt="type">
+                                    <input type="radio" name="type" id="survey_form_radio_1-2" class="survey_form_radio" value="Генеральная уборка" required>
+                                    <span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+                                </div>
+                                <div class="title title_16">Генеральная уборка</div>
+                            </label>
+                            <label for="survey_form_radio_1-3" class="survey_body_item">
+                                <div class="survey_body_item_img">
+                                    <img src="img/survey/type_3.png" alt="type">
+                                    <input type="radio" name="type" id="survey_form_radio_1-3" class="survey_form_radio" value="Уборка после ремонта" required>
+                                    <span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+                                </div>
+                                <div class="title title_16">Уборка после ремонта</div>
+                            </label>
+                            <label for="survey_form_radio_1-4" class="survey_body_item">
+                                <div class="survey_body_item_img">
+                                    <img src="img/survey/type_4.png" alt="type">
+                                    <input type="radio" name="type" id="survey_form_radio_1-4" class="survey_form_radio" value="Химчистка" required>
+                                    <span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+                                </div>
+                                <div class="title title_16">Химчистка</div>
+                            </label>
+                        </div>
+                        <div class="survey_bottom first">
+                            <button class="button" data-show="survey_wrapper_2">Далее</button>
+                        </div>
+                    </div>
+                    <div class="survey_banner">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<script src="js/script.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+</body>
+</html>

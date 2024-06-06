@@ -1,0 +1,161 @@
+.survey {
+    position: relative;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245,245,245, 0.5);
+    &_modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: auto;
+        width: 84.07%;
+        max-width: 1177px;
+        height: 95vh;
+        max-height: 514px;
+        border-radius: 10px;
+        background: #1e3018;
+    }
+    &_wrapper {
+        display: none;
+        justify-content: space-between;
+        height: 100%;
+        &:first-child {
+            display: flex;
+        }
+    }
+    &_content {
+        margin-top: 25px;
+        width: 74%;
+    }
+    &_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > div {
+            text-align: center;
+        }
+        .title_16 {
+            margin-top: 30px;
+        }
+        .title_24 {
+            margin-top: 14px;
+        }
+    }
+    &_progress {
+        margin-top: 6px;
+        display: block;
+        border-radius: 10px;
+        width: 65.9%;
+        height: 9px;
+        &::-webkit-progress-bar {
+            background: #fff;
+            border-radius: 10px;
+        }
+        &::-webkit-progress-value {
+            background: #fad32e;
+            border-radius: 10px;
+        }
+        &::-moz-progress-bar {
+            background: #fad32e;
+            border-radius: 10px;
+        }
+    }
+    &_body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 2.9%;
+        margin-top: 22px;
+        &_item {
+            position: relative;
+            width: 20.41%;
+            .title_16 {
+                margin-top: 17px;
+                text-align: center;
+            }
+            &_img {
+                position: relative;
+                padding: 50% 0;
+                width: 100%;
+                img {
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%, -50%);
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    &_form {
+        &_radio {
+            position: absolute;
+            z-index: -1;
+        }
+        &_label {
+            display: flex;
+            align-items: center;
+            gap: 19px;
+            cursor: pointer;
+        }
+        &_view {
+            position: absolute;
+            left:50%;
+            bottom: 0;
+            transform:translate(-50%, +50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15.7%;
+            height: 15.7%;
+            border-radius: 100%;
+            border: 1px solid #fff;
+            background: #1e3018;
+            transition: .3s;
+        }
+        &_icon {
+            opacity: 0;
+            transition: .3s;
+        }
+        &_radio:checked + &_view {
+            background-color: #fff622;
+            border: none;
+        }
+        &_radio:checked + &_view &_icon {
+            opacity: 1;
+        }
+    }
+    &_bottom {
+        display: flex;
+        justify-content: end;
+        gap: 1%;
+        width: 89.43%;
+        margin: 41px auto 0 auto;
+        .button {
+            width: 25.8%;
+            height: 41px;
+        }
+        .button_back {
+            width: 12.83%;
+            height: 41px;
+        }
+    }
+    &_bottom.first {
+        justify-content: center;
+    }
+    &_banner {
+        width: 26%;
+        border-radius: 10px;
+        background: url('../img/survey/banner_bg.png') no-repeat 50%/cover;
+    }
+    &_form {
+        height: 100%;
+    }
+}
