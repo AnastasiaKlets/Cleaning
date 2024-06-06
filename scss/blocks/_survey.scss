@@ -73,7 +73,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px 2.9%;
-        margin-top: 22px;
         &_item {
             position: relative;
             width: 20.41%;
@@ -98,12 +97,26 @@
         }
     }
     &_body.six {
+        margin-top: 22px;
         .survey_body_item {
             width: 25.8%;
         }
         .survey_body_item_img {
             padding: 27.61% 0;
         }
+    }
+    &_input {
+        width: calc(68.31% - 36px);
+        height: 18px;
+        padding: 16px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background: none;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+        outline: none;
     }
     &_form {
         &_radio {
