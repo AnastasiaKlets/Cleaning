@@ -13,6 +13,7 @@
 	font-weight: 600;
 	font-size: 20px;
 	color: #1f3a16;
+	transition: .5s;
 	&_green {
 		color: #fff;
 		background: #15412e;
@@ -25,9 +26,7 @@
 		}
 	}
 }
-.button_green:hover{
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
 .button:hover{
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 9px 8px 0 rgb(133, 147, 137);
+	transition: .5s;
 }

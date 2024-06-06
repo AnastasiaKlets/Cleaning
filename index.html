@@ -5,23 +5,33 @@
 	<title>Dino EcoRoom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css"/>
+	<script defer src="js/script.js"></script>
 </head>
 <body>
 	<header class="header">
 
 	</header>
+	<section class="vacancies">
+		<div class="container">
+
+		</div>
+	</section>
 	<section class="questions">
 		<div class="container">
-			<span class="title title_32 title_white semi-bold">
+			<span class="title title_32 title_white semi-bold questions_text">
 				Ответили на самые
 				<br>
 				часто задаваемые вопросы
 			</span>
 			<div class="questions_wrapper">
-				<div class="accordion">
+				<div class="questions_wrapper_accordion">
 					<div class="acor-container">
-						<input type="checkbox" name="chacor" id="chacor1" checked="checked" />
-						<label for="chacor1" class="title title_20 medium">Какие услуги оказывает компания?</label>
+						<label for="chacor1" class="title title_20 medium">
+							<p>
+								Какие услуги оказывает компания?
+							</p>
+						</label>
+						<input type="checkbox" name="chacor" id="chacor1" />
 						<div class="acor-body">
 							<p class="title title_20 medium">
 								- Генеральная уборка квартиры
@@ -61,13 +71,23 @@
 								- Уборка кафе и ресторанов
 							</p>
 						</div>
+
+						<label for="chacor2" class="title title_20 medium">
+							<p>
+								Сколько клинеров будут проводить уборку?
+							</p>
+						</label>
 						<input type="checkbox" name="chacor" id="chacor2" />
-						<label for="chacor2" class="title title_20 medium">Сколько клинеров будут проводить уборку?</label>
 						<div class="acor-body">
 							<p class="title title_20 medium">От 2 клинеров </p>
 						</div>
+
+						<label for="chacor3" class="title title_20 medium">
+							<p>
+								Что входит в список дополнительных услуг? Могут ли клинеры помыть посуду или погладить белье?
+							</p>
+						</label>
 						<input type="checkbox" name="chacor" id="chacor3" />
-						<label for="chacor3" class="title title_20 medium">Что входит в список дополнительных услуг? Могут ли клинеры помыть посуду или погладить белье?</label>
 						<div class="acor-body">
 							<p class="title title_20 medium">
 								- Мойка Духовки внутри
@@ -87,8 +107,13 @@
 								- Мойка зеркал
 							</p>
 						</div>
+
+						<label for="chacor4" class="title title_20 medium">
+							<p>
+								Даете ли вы гарантию, что уборка будет выполнена качественно?
+							</p>
+						</label>
 						<input type="checkbox" name="chacor" id="chacor4" />
-						<label for="chacor4" class="title title_20 medium">Даете ли вы гарантию, что уборка будет выполнена качественно?</label>
 						<div class="acor-body">
 							<p class="title title_20 medium">
 								Мы гарантируем качество нашей уборки! Ваше помещение
@@ -100,8 +125,13 @@
 								ваши ожидания!
 							</p>
 						</div>
+
+						<label for="chacor5" class="title title_20 medium">
+							<p>
+								Что делать, если уборка выполнена не качественно?
+							</p>
+						</label>
 						<input type="checkbox" name="chacor" id="chacor5" />
-						<label for="chacor5" class="title title_20 medium">Что делать, если уборка выполнена не качественно?</label>
 						<div class="acor-body">
 							<p class="title title_20 medium">
 								Если вы не удовлетворены качеством нашей уборки, пожалуйста,
@@ -112,8 +142,13 @@
 								рады сделать все возможное, чтобы вы остались довольны.
 							</p>
 						</div>
+
+						<label for="chacor6" class="title title_20 medium">
+							<p>
+								Как сделать заказ?
+							</p>
+						</label>
 						<input type="checkbox" name="chacor" id="chacor6" />
-						<label for="chacor6" class="title title_20 medium">Как сделать заказ?</label>
 						<div class="acor-body">
 							<p class="title title_20 medium">
 								Для заказа вы можете оставить заявку или позвонить по номеру:
@@ -134,7 +169,52 @@
 					</div>
 				</div>
 				<div class="questions_wrapper_application">
-
+					<div class="questions_wrapper_application_text">
+						<span class="title title_24 medium">Оставьте заявку на бесплатную консультацию</span>
+						<span class="title">Напишите нам <br> в удобный для вас мессенджер</span>
+					</div>
+					<div class="questions_wrapper_application_soc">
+						<a href="viber://chat?number=%2B375298507079" class="questions_wrapper_application_soc_a1">
+							<img src="img/viber.png" alt="viber">
+							<span class="title"><b>Написать в</b> Viber</span>
+						</a>
+						<a href="https://t.me/+375298507079" class="questions_wrapper_application_soc_a2">
+							<img src="img/telegram.png" alt="telegram">
+							<span class="title"><b>Написать в</b> Telegram</span>
+						</a>
+					</div>
+					<form class="questions_form" action="#">
+						<span class="title">Или оставьте заявку на звонок</span>
+						<input name="phone" type="text" placeholder="Ваш номер телефона" required>
+						<input type="hidden" name="theme" value="Заявка">
+						<input type="hidden" name="utm_source" class="utm_source" value="">
+						<input type="hidden" name="utm_medium" class="utm_medium" value="">
+						<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+						<input type="hidden" name="utm_content" class="utm_content" value="">
+						<input type="hidden" name="utm_term" class="utm_term" value="">
+						<button type="submit" onclick="" class="button button_green">Отправить заявку</button>
+					</form>
+					<div class="questions_form_check">
+						<label for="checkbox" class="checkbox-label title title_14" >
+							<input type="checkbox" id="checkbox" class="checkbox" checked>
+							<span class="checkbox-view">
+								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_238_67)">
+										<path d="M1 6L5 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+										<path d="M5 10L9.3999 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+									</g>
+									<defs>
+										<clipPath id="clip0_238_67">
+											<rect width="11" height="11" fill="white"/>
+										</clipPath>
+									</defs>
+								</svg>
+							</span>
+							Заполняя данную форму вы соглашаетесь
+							с условиями обработки персональных данных
+							и политикой конфиденциальности
+						</label>
+					</div>
 				</div>
 			</div>
 		</div>
