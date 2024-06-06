@@ -124,10 +124,6 @@
             opacity: 0;
             transition: .3s;
         }
-        &_radio:checked + &_view {
-            background-color: #fff622;
-            border: none;
-        }
         &_radio:checked + &_view &_icon {
             opacity: 1;
         }
@@ -151,9 +147,44 @@
         justify-content: center;
     }
     &_banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 18px 17px 35px 17px;
         width: 26%;
         border-radius: 10px;
         background: url('../img/survey/banner_bg.png') no-repeat 50%/cover;
+        .title {
+            color: #000;
+        }
+        &_comment {
+            padding: 10px 18px;
+            width: 77.12%;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background: #fff;
+            .title_14 {
+                margin-top: 8px;
+            }
+        }
+        &_images {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+        &_discount {
+            position: relative;
+            padding: 12px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.81);
+            img {
+                position: absolute;
+                top: -35px;
+                right: -18px;
+                width: 48%;
+            }
+        }
     }
     &_form {
         height: 100%;
