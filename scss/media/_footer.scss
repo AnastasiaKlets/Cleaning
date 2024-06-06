@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+  .footer{
+    &_wrapper{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      width: 100%;
+      &_inf{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-top: 15px;
+        &_target{
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+        &_logo{
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

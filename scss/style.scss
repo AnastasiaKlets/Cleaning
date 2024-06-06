@@ -17,7 +17,13 @@ a {
 .br {
 	display: none;
 }
+body{
+	background: #1E3018;
 
+}
 @import "blocks/title";
 @import "blocks/button";
+@import "blocks/footer";
+@import "blocks/map";
+@import "blocks/questions";
 @import 'media/general';

@@ -1,0 +1,25 @@
+.footer{
+  &_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    &_inf{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 30px;
+      &_target{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      &_logo{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

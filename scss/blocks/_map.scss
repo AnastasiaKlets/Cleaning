@@ -1,0 +1,46 @@
+.map{
+  display: flex;
+  flex-direction: column;
+  gap:40px;
+  align-items: center;
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+  iframe{
+    width: 100%;
+  }
+  &_wrapper{
+    position: absolute;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 125px;
+    bottom: 40%;
+    &_inf{
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      &_tel{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &_soc{
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+      a{
+        transform: scale(1);
+        transition: .6s;
+      }
+      a:hover{
+        transform: scale(1.2);
+        transition: .6s;
+      }
+    }
+  }
+}

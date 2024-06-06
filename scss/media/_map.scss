@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .map{
+    &_wrapper{
+      border-radius: 10px;
+      padding: 20px;
+      gap: 15px;
+      left: 13%;
+      bottom: 40%;
+      &_inf{
+        gap: 7px;
+      }
+
+    }
+  }
+}

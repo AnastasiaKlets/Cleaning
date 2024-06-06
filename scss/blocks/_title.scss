@@ -27,6 +27,20 @@
 		font-size: 46px;
 	}
 }
+.title{
+	&_white{
+		color: #ffffff;
+	}
+	&_active{
+		text-decoration: none;
+		transition: .6s;
+	}
+	&_active:hover{
+		text-decoration: underline;
+		transition: .6s;
+	}
+}
+
 
 .light {
 	font-weight: 300;
