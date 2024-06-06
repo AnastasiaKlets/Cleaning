@@ -29,6 +29,9 @@
         }
     }
     &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin-top: 25px;
         width: 74%;
     }
@@ -94,6 +97,14 @@
             }
         }
     }
+    &_body.six {
+        .survey_body_item {
+            width: 25.8%;
+        }
+        .survey_body_item_img {
+            padding: 27.61% 0;
+        }
+    }
     &_form {
         &_radio {
             position: absolute;
@@ -128,12 +139,18 @@
             opacity: 1;
         }
     }
+    &_body.six {
+        .survey_form_view {
+            width: 12.43%;
+            height: 22.52%;
+        }
+    }
     &_bottom {
         display: flex;
         justify-content: end;
         gap: 1%;
         width: 89.43%;
-        margin: 41px auto 0 auto;
+        margin: 10px auto 31px auto;
         .button {
             width: 25.8%;
             height: 41px;
@@ -145,6 +162,7 @@
     }
     &_bottom.first {
         justify-content: center;
+        margin: 0 auto 20px auto;
     }
     &_banner {
         display: flex;

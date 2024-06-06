@@ -35,3 +35,22 @@ function modal(triggerSelector, closeSelector, modalSelector) {
 if (document.querySelector('.survey') != null) {
     modal('[data-survey]', 'data-close', '.survey');
 }
+
+const survey_buttons = document.querySelectorAll('.button.next, .button_back');
+
+survey_buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        let next;
+        
+        if (e.target.textContent) {
+            next = e.target.getAttribute('data-show');
+            e.target.parentElement.parentElement.parentElement.style.display = 'none';
+        } else {
+            next = e.target.closest('button').getAttribute('data-show');
+            e.target.closest('button').parentElement.parentElement.parentElement.style.display = 'none';
+        }
+        
+        document.querySelector(`#${next}`).style.display = 'flex';
+    });
+});
