@@ -42,34 +42,64 @@ survey_buttons.forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         let next;
-        
-        if (e.target.textContent) {
-            next = e.target.getAttribute('data-show');
-            e.target.parentElement.parentElement.parentElement.style.display = 'none';
+        let filled = false;
+        let error = button.closest('.survey_wrapper').querySelector('.survey_error');
+
+        if (button.classList.contains('next')) {
+            let inputs = e.target.closest('.survey_wrapper').querySelectorAll('input');
+            inputs.forEach(input => {
+                if (input.type == 'radio' || input.type == 'checkbox') {
+                    if (input.checked) {
+                        filled = true;
+                    }
+                }
+                if (input.type == 'number') {
+                    if (input.value != '') {
+                        filled = true;
+                    }
+                }
+            });
+            if (!filled) {
+                error.classList.add('flex');
+                setTimeout(() => error.classList.remove('flex'), 2000);
+            }
+            console.log(filled)
         } else {
-            next = e.target.closest('button').getAttribute('data-show');
-            e.target.closest('button').parentElement.parentElement.parentElement.style.display = 'none';
-        }
-        if (next.includes('2-1')) {
-            let radios = document.querySelectorAll('input[name="type"]');
-            for (let radio of radios) {
-                if (radio.checked && radio.value == 'Химчистка') {
-                    next = next.slice(0, -1) + '2';
-                    document.getElementById('place').textContent = '';
-                } else {
-                    document.getElementById('place').textContent = 'помещения ';
-                }
-            }
-        }
-        if (next.includes('3-1')) {
-            let radios = document.querySelectorAll('input[name="material"]');
-            for (let radio of radios) {
-                if (radio.checked && radio.value == 'Мягкая мебель') {
-                    next = next.slice(0, -1) + '2';
-                }
-            }
+            error.classList.remove('flex');
         }
         
-        document.querySelector(`#${next}`).style.display = 'flex';
+        if ((button.classList.contains('next') && filled) || button.classList.contains('button_back')) {
+            if (e.target.textContent) {
+                next = e.target.getAttribute('data-show');
+                e.target.parentElement.parentElement.parentElement.style.display = 'none';
+            } else {
+                next = e.target.closest('button').getAttribute('data-show');
+                e.target.closest('button').parentElement.parentElement.parentElement.style.display = 'none';
+            }
+            if (next.includes('2-1')) {
+                let radios = document.querySelectorAll('input[name="type"]');
+                for (let radio of radios) {
+                    if (radio.checked && radio.value == 'Химчистка') {
+                        next = next.slice(0, -1) + '2';
+                        document.getElementById('place').textContent = '';
+                    } else {
+                        document.getElementById('place').textContent = 'помещения ';
+                    }
+                }
+            }
+            if (next.includes('3-1')) {
+                let radios = document.querySelectorAll('input[name="material"]');
+                for (let radio of radios) {
+                    if (radio.checked && radio.value == 'Мягкая мебель') {
+                        next = next.slice(0, -1) + '2';
+                    }
+                }
+            }
+
+            if (error) {
+                error.classList.remove('flex');
+            }
+            document.querySelector(`#${next}`).style.display = 'flex';
+        }
     });
 });
