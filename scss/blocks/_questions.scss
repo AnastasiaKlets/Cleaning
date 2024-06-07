@@ -1,5 +1,15 @@
 .questions{
   margin-top: 80px;
+  position: relative;
+  &_list{
+    position: absolute;
+    top: -90px;
+  }
+  &_list2 {
+    position: absolute;
+    right: 0;
+    bottom: -176px;
+  }
   &_wrapper{
     display: grid;
     grid-template-columns: 60% 38%;

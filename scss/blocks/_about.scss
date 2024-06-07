@@ -1,0 +1,28 @@
+.about{
+  margin-top: 80px;
+  &_wrapper{
+    display: grid;
+    grid-template-columns: 39% 59%;
+    align-items: center;
+    justify-content: space-between;
+    img{
+      width: 100%;
+    }
+    &_inf{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      h2{
+        margin-top: 65px;
+      }
+      span{
+        line-height: 2;
+        font-weight: 600;
+      }
+      button{
+        width: 60%;
+      }
+    }
+  }
+}

@@ -24,6 +24,15 @@
 }
 @media (max-width: 993px) {
   .questions{
+    &_list{
+      width: 40%;
+      top: -72px;
+
+    }
+    &_list2 {
+      width: 65%;
+      bottom: -123px;
+    }
     &_wrapper{
       margin-top: 16px;
       display: flex;

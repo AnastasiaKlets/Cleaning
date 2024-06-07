@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+  .about {
+    margin-top: 20px;
+    &_wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 40px;
+
+      &_inf {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        button {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+}
