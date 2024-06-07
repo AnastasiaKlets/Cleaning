@@ -1,0 +1,142 @@
+@media (max-width:1720px) {
+
+}
+@media (max-width:1600px) {
+
+}
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+	.survey {
+        &_modal {
+            width: 100%;
+            max-width: none;
+            max-height: none;
+        }
+        &_content {
+            width: 100%;
+        }
+        &_header {
+            width: 87.5%;
+            margin: 0 auto;
+            .title_16 {
+                margin-top: 14px;
+            }
+            .title_20 {
+                margin-top: 13px;
+                width: 100%;
+            }
+        }
+        &_progress {
+            margin-top: 14px;
+            width: 100%;
+        }
+        &_body {
+            gap: 19px 6%;
+            &_item {
+                width: 37.82%;
+                .title_16 {
+                    margin-top: 10%;
+                }
+            }
+        }
+        &_body.six {
+            margin-top: 22px;
+            .survey_body_item {
+                width: 42.62%;
+            }
+            .survey_body_item_img {
+                padding: 27.44% 0;
+            }
+        }
+        &_body.six.mono {
+            margin-top: 14px;
+            .survey_body_item {
+                width: 64.42%;
+            }
+        }
+        &_body.quantity {
+            margin-top: 14px;
+            .survey_body_item {
+                width: 34.93%;
+            }
+            .survey_body_item_img {
+                padding: 31.19% 0;
+            }
+        }
+        &_input {
+            width: calc(100% - 36px);
+            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+        &_form {
+            &_label {
+                gap: 17px;
+            }
+        }
+        &_bottom {
+            justify-content: space-between;
+            gap: 2.56%;
+            width: 100%;
+            margin: 25px auto 33px auto;
+            .button {
+                width: 59%;
+            }
+            .button_back {
+                width: 32%;
+            }
+        }
+        &_bottom.first {
+            margin: 28px auto 43px auto;
+            .button {
+                width: 80%;
+            }
+        }
+        &_banner {
+            display: none;
+        }
+        &_result {
+            &_body {
+                width: 87.5%;
+                .button {
+                    width: 84.61%;
+                }
+            }
+            &_discount {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                width: 100%;
+                img {
+                    width: 43%;
+                }
+                .title_24 {
+                    padding-left: 30px;
+                    padding-bottom: 10px;
+                    width: calc(57% - 30px);
+                }
+            }
+            &_view {
+                min-width: 16px;
+                height: 16px;
+                margin-right: 7px;
+            }
+            &_icon {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }    
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}

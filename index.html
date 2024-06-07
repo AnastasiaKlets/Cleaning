@@ -5,12 +5,499 @@
 	<title>Dino EcoRoom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css"/>
-	<script defer src="js/script.js"></script>
 </head>
 <body>
-	<header class="header">
-
-	</header>
+	<header class="header" id="header">
+	<div class="container">
+		<div class="header_wrapper">
+			<div class="header_wrapper_block">
+				<a href="#"  class="header_wrapper_block_logo">
+					<img src="icons/logo.svg" alt="logo" class="header_wrapper_block_logo">
+				</a>
+				<div class="header_wrapper_block_time">
+					<img src="icons/time.svg" alt="time"/>
+					<span class="title title_16">
+							ПН—ПТ: 09:00–21:00
+							<br>
+							без выходных
+						</span>
+				</div>
+				<div class="header_wrapper_block_soc">
+					<a href="#">
+						<img src="icons/telegram.svg" alt="telegram" class="header_wrapper_block_soc_img">
+					</a>
+					<a href="viber://chat?number=%2B375297079979">
+						<img src="icons/viber.svg" alt="viber" class="header_wrapper_block_soc_img">
+					</a>
+				</div>
+				<div class="header_wrapper_block_numbers">
+					<div class="header_wrapper_block_numbers_text">
+						<div class="header_wrapper_block_numbers_text_circle"></div>
+						<span class="title title_12">Звоните, мы сейчас работаем</span>
+					</div>
+					<div class="header_wrapper_block_numbers_mts">
+						<a href="#">
+							<img src="icons/a1.svg" alt="a1">
+							<a href="tel:+375296609979"><span class="title title_16 titleHover">+375(29)660-99-79</span></a>
+						</a>
+					</div>
+					<div class="header_wrapper_block_numbers_mts">
+						<a href="#">
+							<img src="icons/mts.svg" alt="mts">
+							<a href="tel:+375297079979"><span class="title title_16 titleHover">+375(29)707-99-79</span></a>
+						</a>
+					</div>
+				</div>
+				<button data-modal class="button title header_wrapper_block_btn">
+					Заказать замер
+				</button>
+				<div class="menu">
+					<input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+					<label for="burger-checkbox" class="burger"></label>
+					<ul class="menu-list">
+						<li>
+							<div class=" menu_header_wrapper_blockUnder">
+								<a href="#survey" class="title">Расчёт стоимости</a>
+								<a href="#WindowPrices" class="title">Цены на окна</a>
+								<a href="#AboutUs" class="title">О нас</a>
+								<a href="#Lamination" class="title">Ламинация</a>
+								<a href="#Portfolio" class="title">Портфолио</a>
+								<a href="#Reviews" class="title">Отзывы</a>
+								<a href="#Contacts" class="title">Контакты</a>
+							</div>
+						<li>
+						<li>
+							<div class=" menu_header_wrapper_block_soc">
+								<a href="#">
+									<img src="icons/telegram.svg" alt="telegram" class="menu_header_wrapper_block_soc_img ">
+								</a>
+								<a href="viber://chat?number=%2B375297079979">
+									<img src="icons/viber.svg" alt="viber" class="menu_header_wrapper_block_soc_img ">
+								</a>
+							</div>
+						<li>
+						<li>
+							<div class=" menu_header_wrapper_block_time">
+								<img src="icons/time.svg" alt="time"/>
+								<span class="title title_16">
+										ПН—ПТ: 09:00–21:00
+										<br>
+										без выходных
+									</span>
+							</div>
+						<li>
+						<li>
+							<button data-modal class="button title  menu_header_wrapper_block_btn">
+								Заказать замер
+							</button>
+						<li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_wrapper_blockUnder">
+				<a href="#survey" class="title titleHover">Расчёт стоимости</a>
+				<a href="#WindowPrices" class="title titleHover">Цены на окна</a>
+				<a href="#AboutUs" class="title titleHover">О нас</a>
+				<a href="#Lamination" class="title titleHover">Ламинация</a>
+				<a href="#Portfolio" class="title titleHover">Портфолио</a>
+				<a href="#Reviews" class="title titleHover">Отзывы</a>
+				<a href="#Contacts" class="title titleHover">Контакты</a>
+			</div>
+		</div>
+	</div>
+</header>
+	<button data-survey class="button button_green">Узнать стоимость</button>
+	<section class="survey">
+		<div class="survey_modal">
+			<form class="survey_form" action="#">
+				<div id="survey_wrapper_1" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 1 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="25"></progress>
+							<div class="title title_24 semi-bold">Какую уборку хотите?</div>
+							<div class="title title_16">Расскажите о квартире и что нужно убрать</div>
+						</div>
+						<div class="survey_body">
+							<label for="survey_form_radio_1-1" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/type_1.png" alt="type">
+									<input type="radio" name="type" id="survey_form_radio_1-1" class="survey_form_radio" value="Влажная уборка" checked required>
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Влажная уборка</div>
+							</label>
+							<label for="survey_form_radio_1-2" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/type_2.png" alt="type">
+									<input type="radio" name="type" id="survey_form_radio_1-2" class="survey_form_radio" value="Генеральная уборка" required>
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Генеральная уборка</div>
+							</label>
+							<label for="survey_form_radio_1-3" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/type_3.png" alt="type">
+									<input type="radio" name="type" id="survey_form_radio_1-3" class="survey_form_radio" value="Уборка после ремонта" required>
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Уборка после ремонта</div>
+							</label>
+							<label for="survey_form_radio_1-4" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/type_4.png" alt="type">
+									<input type="radio" name="type" id="survey_form_radio_1-4" class="survey_form_radio" value="Химчистка" required>
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Химчистка</div>
+							</label>
+						</div>
+						<div class="survey_bottom first">
+							<button class="button next" data-show="survey_wrapper_2-1">Далее</button>
+						</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+						<div class="survey_banner_discount">
+							<div class="title title_20 semi-bold">скидка<br>на первый заказ</div>
+							<img src="icons/discount.svg" alt="discount">
+						</div>
+					</div>
+				</div>
+				<div id="survey_wrapper_2-1" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 2 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="50"></progress>
+							<div class="title title_24 semi-bold">Выберите вид помещения</div>
+						</div>
+						<div class="survey_body six">
+							<label for="survey_form_radio_2-1-1" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/room_1.png" alt="room">
+									<input type="radio" name="room" id="survey_form_radio_2-1-1" class="survey_form_radio" value="Квартира">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Квартира</div>
+							</label>
+							<label for="survey_form_radio_2-1-2" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/room_2.png" alt="room">
+									<input type="radio" name="room" id="survey_form_radio_2-1-2" class="survey_form_radio" value="Коттедж">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Коттедж</div>
+							</label>
+							<label for="survey_form_radio_2-1-3" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/room_3.png" alt="room">
+									<input type="radio" name="room" id="survey_form_radio_2-1-3" class="survey_form_radio" value="Офис">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Офис</div>
+							</label>
+							<label for="survey_form_radio_2-1-4" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/room_4.png" alt="room">
+									<input type="radio" name="room" id="survey_form_radio_2-1-4" class="survey_form_radio" value="Склад">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Склад</div>
+							</label>
+							<label for="survey_form_radio_2-1-5" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/room_4.png" alt="room">
+									<input type="radio" name="room" id="survey_form_radio_2-1-5" class="survey_form_radio" value="Баня">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Баня</div>
+							</label>
+						</div>
+						<div class="survey_bottom">
+							<button class="button button_back" data-show="survey_wrapper_1">
+								<img src="icons/arrow-back.svg" alt="arrow">
+							</button>
+							<button class="button next" data-show="survey_wrapper_3-1">Далее</button>
+						</div>
+						<div class="survey_error title title_14">Для продолжения опроса заполните пустые поля</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+						<div class="survey_banner_discount">
+							<div class="title title_20 semi-bold">скидка<br>на первый заказ</div>
+							<img src="icons/discount.svg" alt="discount">
+						</div>
+					</div>
+				</div>
+				<div id="survey_wrapper_2-2" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 2 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="50"></progress>
+							<div class="title title_24 semi-bold">Выберите вид химчистки</div>
+						</div>
+						<div class="survey_body six mono">
+							<label for="survey_form_radio_2-2-1" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/material_1.png" alt="material">
+									<input type="radio" name="material" id="survey_form_radio_2-2-1" class="survey_form_radio" value="Ковер">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Ковер</div>
+							</label>
+							<label for="survey_form_radio_2-2-2" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/material_2.png" alt="material">
+									<input type="radio" name="material" id="survey_form_radio_2-2-2" class="survey_form_radio" value="Ковролин">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Ковролин</div>
+							</label>
+							<label for="survey_form_radio_2-2-3" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/material_3.png" alt="material">
+									<input type="radio" name="material" id="survey_form_radio_2-2-3" class="survey_form_radio" value="Мягкая мебель">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Мягкая мебель</div>
+							</label>
+						</div>
+						<div class="survey_bottom">
+							<button class="button button_back" data-show="survey_wrapper_1">
+								<img src="icons/arrow-back.svg" alt="arrow">
+							</button>
+							<button class="button next" data-show="survey_wrapper_3-1">Далее</button>
+						</div>
+						<div class="survey_error title title_14">Для продолжения опроса заполните пустые поля</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+						<div class="survey_banner_discount">
+							<div class="title title_20 semi-bold">скидка<br>на первый заказ</div>
+							<img src="icons/discount.svg" alt="discount">
+						</div>
+					</div>
+				</div>
+				<div id="survey_wrapper_3-1" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 3 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="75"></progress>
+							<div class="title title_24 semi-bold">Укажите площадь <span id="place"></span>в м2</div>
+						</div>
+						<div class="survey_body">
+							<input type="number" name="area" class="survey_input">
+						</div>
+						<div class="survey_bottom">
+							<button class="button button_back" data-show="survey_wrapper_2-1">
+								<img src="icons/arrow-back.svg" alt="arrow">
+							</button>
+							<button class="button next" data-show="survey_result">Далее</button>
+						</div>
+						<div class="survey_error title title_14">Для продолжения опроса заполните пустые поля</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+						<div class="survey_banner_discount">
+							<div class="title title_20 semi-bold">скидка<br>на первый заказ</div>
+							<img src="icons/discount.svg" alt="discount">
+						</div>
+					</div>
+				</div>
+				<div id="survey_wrapper_3-2" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 3 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="75"></progress>
+							<div class="title title_24 semi-bold">Укажите количество посадочных мест</div>
+						</div>
+						<div class="survey_body quantity">
+							<label for="survey_form_radio_3-2-1" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_1.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-1" class="survey_form_radio" value="2 места">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">2 места</div>
+							</label>
+							<label for="survey_form_radio_3-2-2" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_2.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-2" class="survey_form_radio" value="3 места">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Ковролин</div>
+							</label>
+							<label for="survey_form_radio_3-2-3" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_3.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-3" class="survey_form_radio" value="4 места">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">4 места</div>
+							</label>
+							<label for="survey_form_radio_3-2-4" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_4.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-4" class="survey_form_radio" value="5 мест">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">5 мест</div>
+							</label>
+							<label for="survey_form_radio_3-2-5" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_5.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-5" class="survey_form_radio" value="Стул">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Стул</div>
+							</label>
+							<label for="survey_form_radio_3-2-6" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_6.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-6" class="survey_form_radio" value="Кресло">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Кресло</div>
+							</label>
+							<label for="survey_form_radio_3-2-7" class="survey_body_item">
+								<div class="survey_body_item_img">
+									<img src="img/survey/quantity_7.png" alt="quantity">
+									<input type="checkbox" name="quantity[]" id="survey_form_radio_3-2-7" class="survey_form_radio" value="Пуф">
+									<span class="survey_form_view">
+                                        <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
+                                    </span>
+								</div>
+								<div class="title title_16">Пуф</div>
+							</label>
+						</div>
+						<div class="survey_bottom">
+							<button class="button button_back" data-show="survey_wrapper_2-2">
+								<img src="icons/arrow-back.svg" alt="arrow">
+							</button>
+							<button class="button next" data-show="survey_result">Далее</button>
+						</div>
+						<div class="survey_error title title_14">Для продолжения опроса заполните пустые поля</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+						<div class="survey_banner_discount">
+							<div class="title title_20 semi-bold">скидка<br>на первый заказ</div>
+							<img src="icons/discount.svg" alt="discount">
+						</div>
+					</div>
+				</div>
+				<div id="survey_result" class="survey_wrapper">
+					<div class="survey_content">
+						<div class="survey_header">
+							<div class="title title_14">Вы отвечаете на 4 <span class="semi-bold">вопрос</span> из 4</div>
+							<progress class="survey_progress" max="100" value="90"></progress>
+							<div class="title title_24 semi-bold">Отлично!</div>
+							<div class="title title_20 medium">Наш инженер уже приступил к расчёту стоимости. Нам осталось только узнать, куда отправить результаты расчета!</div>
+						</div>
+						<div class="survey_result_body">
+							<input type="hidden" name="theme" value="Заявка из квиза">
+							<input type="hidden" name="utm_source" class="utm_source" value="">
+							<input type="hidden" name="utm_medium" class="utm_medium" value="">
+							<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+							<input type="hidden" name="utm_content" class="utm_content" value="">
+							<input type="hidden" name="utm_term" class="utm_term" value="">
+							<input type="text" name="phone" placeholder="Ваш телефон, WhatsApp или Viber" class="survey_input" required>
+							<label for="survey_result_checkbox" class="survey_result_label">
+								<input type="checkbox" name="checkbox" id="survey_result_checkbox" class="survey_result_checkbox" required checked>
+								<span class="survey_result_view">
+                                    <div class="survey_result_icon"></div>
+                                </span>
+								<div class="title title_16"><span>Вы соглашаетесь на&nbsp; <span class="policy">обработку персональных данных</span></span></div>
+							</label>
+							<button class="button" type="submit">Отправить</button>
+						</div>
+						<div class="survey_bottom">
+							<div class="survey_result_discount">
+								<div class="title title_24 semi-bold">Вы получаете:<br><div class="title title_20 semi-bold">скидку на первый заказ</div></div>
+								<img src="icons/discount.svg" alt="discount">
+							</div>
+						</div>
+					</div>
+					<div class="survey_banner">
+						<div class="survey_banner_comment">
+							<div class="survey_banner_images">
+								<img src="icons/user.svg" alt="user">
+								<img src="icons/hint.svg" alt="hint">
+							</div>
+							<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
 	<section class="services">
 		<img src="img/list3.png" alt="list" class="services_img">
 		<div class="container">
@@ -93,6 +580,107 @@
 					<button class="button">
 						Заказать звонок
 					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cleaningUp">
+		<div class="container">
+			<div class="cleaningUp_wrapper">
+				<div class="w3-bar w3-black cleaningUp_wrapper_btn">
+					<div class="cleaningUp_wrapper_btn_dop">
+						<button class="w3-bar-item w3-button tablink title title_20 bntGreen" onclick="openCity2(event,'Room')"><div class="tablink_img bntGreenImg"></div>Комната</button>
+						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Kitchen')"><div class="tablink_img2 bntGreenImg"></div>Кухня</button>
+						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Bathroom')"><div class="tablink_img3 bntGreenImg"></div>Ванная</button>
+						<button class="w3-bar-item w3-button tablink title title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
+						<button class="w3-bar-item w3-button tablink title title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
+					</div>
+					<div class="cleaningUp_wrapper_btn_dopMob">
+						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
+						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
+					</div>
+				</div>
+
+				<div id="Room" class="w3-container w3-border city1 cleaningUp_wrapper_img">
+					<img src="img/cleaningUp/Room.png" alt="Room">
+					<div class="cleaningUp_wrapper_ulMob">
+						<ul class="title title_20 title_white">
+							<li>Чистим стеклянные поверхности и зеркала</li>
+							<li>Протираем все доступные поверхности</li>
+							<li>Моем пол и протираем плинтусы</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+						<span class="title title_white">Дополнительные услуги:</span>
+						<ul class="title title_20 title_white">
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="Kitchen" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
+					<img src="img/cleaningUp/Kitchen.png" alt="Kitchen">
+					<div class="cleaningUp_wrapper_ulMob">
+						<ul class="title title_20 title_white">
+							<li>Чистим стеклянные поверхности и зеркала</li>
+							<li>Протираем все доступные поверхности</li>
+							<li>Моем пол и протираем плинтусы</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+						<span class="title title_20 title_white">Дополнительные услуги:</span>
+						<ul class="title title_20 title_white">
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Bathroom" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
+					<img src="img/cleaningUp/Bathroom.png" alt="Bathroom">
+					<div class="cleaningUp_wrapper_ulMob">
+						<ul class="title title_20 title_white">
+							<li>Чистим стеклянные поверхности и зеркала</li>
+							<li>Протираем все доступные поверхности</li>
+							<li>Моем пол и протираем плинтусы</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+						<span class="title title_20 title_white">Дополнительные услуги:</span>
+						<ul class="title title_20 title_white">
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Hallway" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
+					<img src="img/cleaningUp/Hallway.png" alt="Hallway">
+					<div class="cleaningUp_wrapper_ulMob">
+						<ul class="title title_20 title_white">
+							<li>Чистим стеклянные поверхности и зеркала</li>
+							<li>Протираем все доступные поверхности</li>
+							<li>Моем пол и протираем плинтусы</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+						<span class="title title_20 title_white">Дополнительные услуги:</span>
+						<ul class="title title_20 title_white">
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+					</div>
+				</div>
+				<div id="Office" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
+					<img src="img/cleaningUp/Office.png" alt="Office">
+					<div class="cleaningUp_wrapper_ulMob">
+						<ul class="title title_20 title_white">
+							<li>Чистим стеклянные поверхности и зеркала</li>
+							<li>Протираем все доступные поверхности</li>
+							<li>Моем пол и протираем плинтусы</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+						<span class="title title_20 title_white">Дополнительные услуги:</span>
+						<ul class="title title_20 title_white">
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
