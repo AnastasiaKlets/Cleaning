@@ -127,7 +127,7 @@
         border-radius: 10px;
         background: none;
         text-align: center;
-        font-weight: 500;
+        font-weight: 400;
         font-size: 14px;
         color: #fff;
         outline: none;
@@ -145,7 +145,7 @@
         &_label {
             display: flex;
             align-items: center;
-            gap: 19px;
+            gap: 16px;
             cursor: pointer;
         }
         &_view {
@@ -254,7 +254,7 @@
             margin: 0 auto;
             width: 55.91%;
             input {
-                width: 100%;
+                width: calc(100% - 32px);
             }
             .button {
                 width: 58.52%;
@@ -285,6 +285,7 @@
         &_label {
             position: relative;
             display: flex;
+            width: 100%;
             cursor: pointer;
             .title {
                 display: flex;
@@ -331,6 +332,7 @@
         border-radius: 10px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         background: #fff;
+        text-align: center;
         color: #000;
         &:hover {
             opacity: 0;
