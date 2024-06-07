@@ -10,7 +10,7 @@
     <button data-survey class="button button_green">Узнать стоимость</button>
 	<section class="survey">
         <div class="survey_modal">
-            <div class="survey_form">
+            <form class="survey_form" action="#">
                 <div id="survey_wrapper_1" class="survey_wrapper">
                     <div class="survey_content">
                         <div class="survey_header">
@@ -90,7 +90,7 @@
                             <label for="survey_form_radio_2-1-1" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/room_1.png" alt="room">
-                                    <input type="radio" name="room" id="survey_form_radio_2-1-1" class="survey_form_radio" value="Квартира" required>
+                                    <input type="radio" name="room" id="survey_form_radio_2-1-1" class="survey_form_radio" value="Квартира">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -100,7 +100,7 @@
                             <label for="survey_form_radio_2-1-2" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/room_2.png" alt="room">
-                                    <input type="radio" name="room" id="survey_form_radio_2-1-2" class="survey_form_radio" value="Коттедж" required>
+                                    <input type="radio" name="room" id="survey_form_radio_2-1-2" class="survey_form_radio" value="Коттедж">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -110,7 +110,7 @@
                             <label for="survey_form_radio_2-1-3" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/room_3.png" alt="room">
-                                    <input type="radio" name="room" id="survey_form_radio_2-1-3" class="survey_form_radio" value="Офис" required>
+                                    <input type="radio" name="room" id="survey_form_radio_2-1-3" class="survey_form_radio" value="Офис">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -120,7 +120,7 @@
                             <label for="survey_form_radio_2-1-4" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/room_4.png" alt="room">
-                                    <input type="radio" name="room" id="survey_form_radio_2-1-4" class="survey_form_radio" value="Склад" required>
+                                    <input type="radio" name="room" id="survey_form_radio_2-1-4" class="survey_form_radio" value="Склад">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -130,7 +130,7 @@
                             <label for="survey_form_radio_2-1-5" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/room_4.png" alt="room">
-                                    <input type="radio" name="room" id="survey_form_radio_2-1-5" class="survey_form_radio" value="Баня" required>
+                                    <input type="radio" name="room" id="survey_form_radio_2-1-5" class="survey_form_radio" value="Баня">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -170,7 +170,7 @@
                             <label for="survey_form_radio_2-2-1" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/material_1.png" alt="material">
-                                    <input type="radio" name="material" id="survey_form_radio_2-2-1" class="survey_form_radio" value="Ковер" required>
+                                    <input type="radio" name="material" id="survey_form_radio_2-2-1" class="survey_form_radio" value="Ковер">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -180,7 +180,7 @@
                             <label for="survey_form_radio_2-2-2" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/material_2.png" alt="material">
-                                    <input type="radio" name="material" id="survey_form_radio_2-2-2" class="survey_form_radio" value="Ковролин" required>
+                                    <input type="radio" name="material" id="survey_form_radio_2-2-2" class="survey_form_radio" value="Ковролин">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -190,7 +190,7 @@
                             <label for="survey_form_radio_2-2-3" class="survey_body_item">
                                 <div class="survey_body_item_img">
                                     <img src="img/survey/material_3.png" alt="material">
-                                    <input type="radio" name="material" id="survey_form_radio_2-2-3" class="survey_form_radio" value="Мягкая мебель" required>
+                                    <input type="radio" name="material" id="survey_form_radio_2-2-3" class="survey_form_radio" value="Мягкая мебель">
                                     <span class="survey_form_view">
                                         <img class="survey_form_icon" src="icons/survey_check.svg" alt="survey_check">
                                     </span>
@@ -223,11 +223,11 @@
                     <div class="survey_content">
                         <div class="survey_header">
                             <div class="title title_14">Вы отвечаете на 3 <span class="semi-bold">вопрос</span> из 4</div>
-                            <progress class="survey_progress" max="100" value="50"></progress>
+                            <progress class="survey_progress" max="100" value="75"></progress>
                             <div class="title title_24 semi-bold">Укажите площадь <span id="place"></span>в м2</div>
                         </div>
                         <div class="survey_body">
-                            <input type="number" name="area" class="survey_input" required>
+                            <input type="number" name="area" class="survey_input">
                         </div>
                         <div class="survey_bottom">
                             <button class="button button_back" data-show="survey_wrapper_2-1">
@@ -254,7 +254,7 @@
                     <div class="survey_content">
                         <div class="survey_header">
                             <div class="title title_14">Вы отвечаете на 3 <span class="semi-bold">вопрос</span> из 4</div>
-                            <progress class="survey_progress" max="100" value="50"></progress>
+                            <progress class="survey_progress" max="100" value="75"></progress>
                             <div class="title title_24 semi-bold">Укажите количество посадочных мест</div>
                         </div>
                         <div class="survey_body quantity">
@@ -350,10 +350,46 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div id="survey_result" class="survey_wrapper">
+                    <div class="survey_content">
+                        <div class="survey_header">
+                            <div class="title title_14">Вы отвечаете на 4 <span class="semi-bold">вопрос</span> из 4</div>
+                            <progress class="survey_progress" max="100" value="90"></progress>
+                            <div class="title title_24 semi-bold">Отлично!</div>
+                            <div class="title title_20 medium">Наш инженер уже приступил к расчёту стоимости. Нам осталось только узнать, куда отправить результаты расчета!</div>
+                        </div>
+                        <div class="survey_result_body">
+                            <input type="text" name="phone" placeholder="Ваш телефон, WhatsApp или Viber" class="survey_input" required>
+                            <button class="button" type="submit">Отправить</button>
+                            <label for="survey_result_checkbox" class="survey_result_label">
+                                <input type="checkbox" name="checkbox" id="survey_result_checkbox" class="survey_result_checkbox" required checked>
+                                <span class="survey_result_view">
+                                    <div class="survey_result_icon"></div>
+                                </span>
+                                <div class="title title_16"><span>Вы соглашаетесь на&nbsp; <span class="policy">обработку персональных данных</span></span></div>
+                            </label>
+                        </div>
+                        <div class="survey_bottom">
+                            <div class="survey_result_discount">
+                                <div class="title title_24 semi-bold">Вы получаете:<br><div class="title title_20 semi-bold">скидку на первый заказ</div></div>
+                                <img src="icons/discount.svg" alt="discount">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="survey_banner">
+                        <div class="survey_banner_comment">
+                            <div class="survey_banner_images">
+                                <img src="icons/user.svg" alt="user">
+                                <img src="icons/hint.svg" alt="hint">
+                            </div>
+                            <div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/jquery-3.7.1.min.js"></script>
 </body>
 </html>
