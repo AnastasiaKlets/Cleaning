@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+.vacancies_wrapper_col1_row2, .vacancies_wrapper_col1_row1_img1, .vacancies_wrapper_col2_img_des
+{
+  display: none;
+}
+  .vacancies_wrapper_col2_img_dop{
+    display: inline;
+  }
+  .vacancies{
+    margin-top: 80px;
+    h2{
+      position: static;
+    }
+    &_wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      img{
+        width: 100%;
+      }
+      .vacancies_wrapper_col1_row1_imgMob{
+        display: inline;
+        width: 10%;
+      }
+      &_col1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: stretch;
+        align-items: stretch;
+        &_row1{
+          align-items: center;
+          gap: 30px;
+          button{
+            width: 100%;
+          }
+        }
+      }
+      &_col2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        &_img{
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}
