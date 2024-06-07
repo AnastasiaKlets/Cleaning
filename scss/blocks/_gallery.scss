@@ -1,0 +1,61 @@
+.gallery {
+    padding-top: 80px;
+    &_container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 521px;
+    }
+    &_image {
+        width: 65.94%;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+    &_wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 33.19%;
+        transform: rotate(90deg);
+    }
+    &_slide {
+        transform: rotate(-90deg);
+        border-radius: 20px;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+    &_field {
+        display: flex;
+    }
+    &_prev, &_next {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    &_indicators {
+        position: absolute;
+        bottom: 13px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    &_dot {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background: #d9d9d9;
+        cursor: pointer;
+    }
+    &_active {
+        background: #fff;
+    }
+}
