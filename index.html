@@ -8,45 +8,20 @@
 </head>
 <body>
 	<header class="header" id="header">
-	<div class="container">
+		<div class="container">
 		<div class="header_wrapper">
 			<div class="header_wrapper_block">
 				<a href="#"  class="header_wrapper_block_logo">
 					<img src="icons/logo.svg" alt="logo" class="header_wrapper_block_logo">
 				</a>
 				<div class="header_wrapper_block_time">
-					<img src="icons/time.svg" alt="time"/>
-					<span class="title title_16">
-							ПН—ПТ: 09:00–21:00
-							<br>
-							без выходных
-						</span>
+
 				</div>
 				<div class="header_wrapper_block_soc">
-					<a href="#">
-						<img src="icons/telegram.svg" alt="telegram" class="header_wrapper_block_soc_img">
-					</a>
-					<a href="viber://chat?number=%2B375297079979">
-						<img src="icons/viber.svg" alt="viber" class="header_wrapper_block_soc_img">
-					</a>
+
 				</div>
 				<div class="header_wrapper_block_numbers">
-					<div class="header_wrapper_block_numbers_text">
-						<div class="header_wrapper_block_numbers_text_circle"></div>
-						<span class="title title_12">Звоните, мы сейчас работаем</span>
-					</div>
-					<div class="header_wrapper_block_numbers_mts">
-						<a href="#">
-							<img src="icons/a1.svg" alt="a1">
-							<a href="tel:+375296609979"><span class="title title_16 titleHover">+375(29)660-99-79</span></a>
-						</a>
-					</div>
-					<div class="header_wrapper_block_numbers_mts">
-						<a href="#">
-							<img src="icons/mts.svg" alt="mts">
-							<a href="tel:+375297079979"><span class="title title_16 titleHover">+375(29)707-99-79</span></a>
-						</a>
-					</div>
+
 				</div>
 				<button data-modal class="button title header_wrapper_block_btn">
 					Заказать замер
@@ -57,12 +32,11 @@
 					<ul class="menu-list">
 						<li>
 							<div class=" menu_header_wrapper_blockUnder">
-								<a href="#survey" class="title">Расчёт стоимости</a>
-								<a href="#WindowPrices" class="title">Цены на окна</a>
-								<a href="#AboutUs" class="title">О нас</a>
-								<a href="#Lamination" class="title">Ламинация</a>
-								<a href="#Portfolio" class="title">Портфолио</a>
-								<a href="#Reviews" class="title">Отзывы</a>
+								<a href="#survey" class="title">Услуги</a>
+								<a href="#WindowPrices" class="title">Прайс</a>
+								<a href="#AboutUs" class="title">О компании</a>
+								<a href="#Reviews" class="title">Вакансии</a>
+								<a href="#Contacts" class="title">Вопрос-Ответ</a>
 								<a href="#Contacts" class="title">Контакты</a>
 							</div>
 						<li>
@@ -95,18 +69,25 @@
 				</div>
 			</div>
 			<div class="header_wrapper_blockUnder">
-				<a href="#survey" class="title titleHover">Расчёт стоимости</a>
-				<a href="#WindowPrices" class="title titleHover">Цены на окна</a>
-				<a href="#AboutUs" class="title titleHover">О нас</a>
-				<a href="#Lamination" class="title titleHover">Ламинация</a>
-				<a href="#Portfolio" class="title titleHover">Портфолио</a>
-				<a href="#Reviews" class="title titleHover">Отзывы</a>
-				<a href="#Contacts" class="title titleHover">Контакты</a>
+				<a href="#survey" class="title">Услуги</a>
+				<a href="#WindowPrices" class="title">Прайс</a>
+				<a href="#AboutUs" class="title">О компании</a>
+				<a href="#Reviews" class="title">Вакансии</a>
+				<a href="#Contacts" class="title">Вопрос-Ответ</a>
+				<a href="#Contacts" class="title">Контакты</a>
 			</div>
 		</div>
 	</div>
-</header>
-	<button data-survey class="button button_green">Узнать стоимость</button>
+	</header>
+	<section class="surveyImg">
+		<img src="img/survey/banner.png" alt="banner">
+		<h1 class="title title_40 semi-bold title_darck surveyImg_title">
+			Клининговая компания
+			<br>
+			“Dino-EcoRoom” в Беларуси
+		</h1>
+		<button data-survey class="button button_green surveyImg_btn title">Узнать стоимость</button>
+	</section>
 	<section class="survey">
 		<div class="survey_modal">
 			<form class="survey_form" action="#">
@@ -502,14 +483,14 @@
 		<img src="img/list3.png" alt="list" class="services_img">
 		<div class="container">
 			<div class="services_wrapper">
-				<span class="title title_32 title_white services_wrapper_title">Услуги</span>
+				<span class="title title_32  services_wrapper_title">Услуги</span>
 				<div class="w3-bar w3-black services_wrapper_button">
 					<button id="services1" class="w3-bar-item w3-button title_20 button" onclick="openCity('London')">Для физических лиц</button>
 					<button id="services2" class="w3-bar-item w3-button title_20 button_green1 button" onclick="openCity('Paris')">Для юридических лиц</button>
 				</div>
 				<div id="London" class="w3-container city services_wrapper_container1">
 					<div class="services_wrapper_container1_list">
-						<ul class="title title_20">
+						<ul class="title title_20 title_darck">
 							<li>Генеральная уборка</li>
 							<li>Ежедневная уборка квартиры</li>
 							<li>Мойка окон и витрин</li>
@@ -520,7 +501,7 @@
 							<li>Уборка после пожара</li>
 							<li>Покос травы</li>
 						</ul>
-						<ul class="title title_20">
+						<ul class="title title_20 title_darck">
 							<li>Уборка бани</li>
 							<li>Уборка складов</li>
 							<li>Уборка гаражей</li>
@@ -536,7 +517,7 @@
 				</div>
 				<div id="Paris" class="w3-container city services_wrapper_container1" style="display:none">
 					<div class="services_wrapper_container1_list">
-						<ul class="title title_20">
+						<ul class="title title_20 title_darck">
 							<li>Уборка складов</li>
 							<li>Уборка бани</li>
 							<li>Генеральная уборка</li>
@@ -547,7 +528,7 @@
 							<li>Уборка кафе и ресторана</li>
 							<li>Уборка бизнес-центров</li>
 						</ul>
-						<ul class="title title_20">
+						<ul class="title title_20 title_darck">
 							<li>Химчистка ковролина</li>
 							<li>Химчистка мягкой мебели</li>
 							<li>Химчистка автосалона</li>
@@ -565,8 +546,8 @@
 			<div class="about_wrapper">
 				<img src="img/about/about.png" alt="about_company">
 				<div class="about_wrapper_inf">
-					<h2 class="title title_46 semi-bold title_white">О компании</h2>
-					<span class="title title_white title_18 ">
+					<h2 class="title title_46 semi-bold ">О компании</h2>
+					<span class="title  title_18 ">
 						Компания "Dino-EcoRoom" была основана в 2023 году
 						с целью сделать процесс уборки максимально эффективным
 						и удобным для клиентов. Мы стремимся предоставить нашим
@@ -589,29 +570,29 @@
 			<div class="cleaningUp_wrapper">
 				<div class="w3-bar w3-black cleaningUp_wrapper_btn">
 					<div class="cleaningUp_wrapper_btn_dop">
-						<button class="w3-bar-item w3-button tablink title title_20 bntGreen" onclick="openCity2(event,'Room')"><div class="tablink_img bntGreenImg"></div>Комната</button>
-						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Kitchen')"><div class="tablink_img2 bntGreenImg"></div>Кухня</button>
-						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Bathroom')"><div class="tablink_img3 bntGreenImg"></div>Ванная</button>
-						<button class="w3-bar-item w3-button tablink title title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
-						<button class="w3-bar-item w3-button tablink title title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20 bntGreen" onclick="openCity2(event,'Room')"><div class="tablink_img bntGreenImg"></div>Комната</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20" onclick="openCity2(event,'Kitchen')"><div class="tablink_img2 bntGreenImg"></div>Кухня</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20" onclick="openCity2(event,'Bathroom')"><div class="tablink_img3 bntGreenImg"></div>Ванная</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20 cleaningUp_wrapper_btn_dopDes" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
 					</div>
 					<div class="cleaningUp_wrapper_btn_dopMob">
-						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
-						<button class="w3-bar-item w3-button tablink title title_20" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20" onclick="openCity2(event,'Hallway')"><div class="tablink_img4 bntGreenImg"></div>Прихожая</button>
+						<button class="w3-bar-item w3-button tablink title title_darck title_20" onclick="openCity2(event,'Office')"><div class="tablink_img5 bntGreenImg"></div>Офис</button>
 					</div>
 				</div>
 
 				<div id="Room" class="w3-container w3-border city1 cleaningUp_wrapper_img">
 					<img src="img/cleaningUp/Room.png" alt="Room">
 					<div class="cleaningUp_wrapper_ulMob">
-						<ul class="title title_20 title_white">
+						<ul class="title title_20 ">
 							<li>Чистим стеклянные поверхности и зеркала</li>
 							<li>Протираем все доступные поверхности</li>
 							<li>Моем пол и протираем плинтусы</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
-						<span class="title title_white">Дополнительные услуги:</span>
-						<ul class="title title_20 title_white">
+						<span class="title ">Дополнительные услуги:</span>
+						<ul class="title title_20 ">
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
@@ -621,14 +602,14 @@
 				<div id="Kitchen" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
 					<img src="img/cleaningUp/Kitchen.png" alt="Kitchen">
 					<div class="cleaningUp_wrapper_ulMob">
-						<ul class="title title_20 title_white">
+						<ul class="title title_20 ">
 							<li>Чистим стеклянные поверхности и зеркала</li>
 							<li>Протираем все доступные поверхности</li>
 							<li>Моем пол и протираем плинтусы</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
-						<span class="title title_20 title_white">Дополнительные услуги:</span>
-						<ul class="title title_20 title_white">
+						<span class="title title_20 ">Дополнительные услуги:</span>
+						<ul class="title title_20 ">
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
@@ -637,14 +618,14 @@
 				<div id="Bathroom" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
 					<img src="img/cleaningUp/Bathroom.png" alt="Bathroom">
 					<div class="cleaningUp_wrapper_ulMob">
-						<ul class="title title_20 title_white">
+						<ul class="title title_20 ">
 							<li>Чистим стеклянные поверхности и зеркала</li>
 							<li>Протираем все доступные поверхности</li>
 							<li>Моем пол и протираем плинтусы</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
-						<span class="title title_20 title_white">Дополнительные услуги:</span>
-						<ul class="title title_20 title_white">
+						<span class="title title_20 ">Дополнительные услуги:</span>
+						<ul class="title title_20 ">
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
@@ -653,14 +634,14 @@
 				<div id="Hallway" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
 					<img src="img/cleaningUp/Hallway.png" alt="Hallway">
 					<div class="cleaningUp_wrapper_ulMob">
-						<ul class="title title_20 title_white">
+						<ul class="title title_20 ">
 							<li>Чистим стеклянные поверхности и зеркала</li>
 							<li>Протираем все доступные поверхности</li>
 							<li>Моем пол и протираем плинтусы</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
-						<span class="title title_20 title_white">Дополнительные услуги:</span>
-						<ul class="title title_20 title_white">
+						<span class="title title_20 ">Дополнительные услуги:</span>
+						<ul class="title title_20 ">
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
@@ -669,14 +650,14 @@
 				<div id="Office" class="w3-container w3-border city1 cleaningUp_wrapper_img" style="display:none">
 					<img src="img/cleaningUp/Office.png" alt="Office">
 					<div class="cleaningUp_wrapper_ulMob">
-						<ul class="title title_20 title_white">
+						<ul class="title title_20 ">
 							<li>Чистим стеклянные поверхности и зеркала</li>
 							<li>Протираем все доступные поверхности</li>
 							<li>Моем пол и протираем плинтусы</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
-						<span class="title title_20 title_white">Дополнительные услуги:</span>
-						<ul class="title title_20 title_white">
+						<span class="title title_20 ">Дополнительные услуги:</span>
+						<ul class="title title_20 ">
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 							<li>Обеспыливаем стены. Протираем предметы интерьера</li>
 						</ul>
@@ -690,8 +671,8 @@
 			<div class="vacancies_wrapper">
 				<div class="vacancies_wrapper_col1">
 					<div class="vacancies_wrapper_col1_row1">
-						<h2 class="title title_32 title_white semi-bold">Открыт набор на вакансии:</h2>
-						<p class="title title_20 title_white light">
+						<h2 class="title title_32  semi-bold">Открыт набор на вакансии:</h2>
+						<p class="title title_20  light">
 							Мы нанимаем только лучших людей,
 							на 1 должность выбираем среди 30 претендентов.
 							Затем учим их и регулярно следим за рейтингом
@@ -702,33 +683,33 @@
 					</div>
 					<div class="vacancies_wrapper_col1_row2">
 						<img src="img/vacancies/vacancies5.png" alt="vacancies">
-						<span class="title bold">Уборщица</span>
+						<span class="title bold title_darck">Уборщица</span>
 					</div>
 				</div>
 				<div class="vacancies_wrapper_col2">
 					<div class="vacancies_wrapper_col2_img">
 						<img src="img/vacancies/vacancies.png" alt="vacancies" class="vacancies_wrapper_col2_img_des">
 						<img src="img/vacancies/vacancies_mob.png" alt="vacancies" class="vacancies_wrapper_col2_img_dop">
-						<span class="title bold">Клинер с опытом</span>
+						<span class="title bold title_darck">Клинер с опытом</span>
 					</div>
 					<div class="vacancies_wrapper_col2_img">
 						<img src="img/vacancies/vacancies2.png" alt="vacancies" class="vacancies_wrapper_col2_img_des">
 						<img src="img/vacancies/vacancies_mob2.png" alt="vacancies" class="vacancies_wrapper_col2_img_dop">
-						<span class="title bold">Кухонный работник</span>
+						<span class="title bold title_darck">Кухонный работник</span>
 					</div>
 					<div class="vacancies_wrapper_col2_img vacancies_wrapper_col2_img_dop">
 						<img src="img/vacancies/vacancies_mob5.png" alt="vacancies">
-						<span class="title bold">Уборщица</span>
+						<span class="title bold title_darck">Уборщица</span>
 					</div>
 					<div class="vacancies_wrapper_col2_img">
 						<img src="img/vacancies/vacancies3.png" alt="vacancies" class="vacancies_wrapper_col2_img_des">
 						<img src="img/vacancies/vacancies_mob3.png" alt="vacancies" class="vacancies_wrapper_col2_img_dop">
-						<span class="title bold">Грузчик</span>
+						<span class="title bold title_darck">Грузчик</span>
 					</div>
 					<div class="vacancies_wrapper_col2_img">
 						<img src="img/vacancies/vacancies4.png" alt="vacancies"  class="vacancies_wrapper_col2_img_des">
 						<img src="img/vacancies/vacancies_mob4.png" alt="vacancies" class="vacancies_wrapper_col2_img_dop">
-						<span class="title bold">Специалист по мойке окон</span>
+						<span class="title bold title_darck">Специалист по мойке окон</span>
 					</div>
 				</div>
 			</div>
@@ -737,7 +718,7 @@
 	<section class="questions">
 		<img src="img/list.png" alt="list" class="questions_list">
 		<div class="container">
-			<span class="title title_32 title_white semi-bold questions_text">
+			<span class="title title_32  semi-bold questions_text">
 				Ответили на самые
 				<br>
 				часто задаваемые вопросы
@@ -746,11 +727,11 @@
 				<div class="questions_wrapper_accordion">
 					<div class="acor-container">
 						<input type="checkbox" name="chacor" id="chacor1" />
-						<label for="chacor1" class="title title_20 medium">
+						<label for="chacor1" class="title title_20 medium title_darck">
 								Какие услуги оказывает компания?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">
+							<p class="title title_20 medium title_darck">
 								- Генеральная уборка квартиры
 								<br>
 								- Ежедневна уборка кв.
@@ -789,18 +770,18 @@
 							</p>
 						</div>
 						<input type="checkbox" name="chacor" id="chacor2" />
-						<label for="chacor2" class="title title_20 medium">
+						<label for="chacor2" class="title title_20 medium title_darck">
 								Сколько клинеров будут проводить уборку?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">От 2 клинеров </p>
+							<p class="title title_20 medium title_darck">От 2 клинеров </p>
 						</div>
 						<input type="checkbox" name="chacor" id="chacor3" />
-						<label for="chacor3" class="title title_20 medium">
+						<label for="chacor3" class="title title_20 medium title_darck">
 							Что входит в список дополнительных услуг? Могут ли клинеры помыть посуду или погладить белье?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">
+							<p class="title title_20 medium title_darck">
 								- Мойка Духовки внутри
 								<br>
 								- Мойка вытяжки
@@ -819,11 +800,11 @@
 							</p>
 						</div>
 						<input type="checkbox" name="chacor" id="chacor4" />
-						<label for="chacor4" class="title title_20 medium">
+						<label for="chacor4" class="title title_20 medium title_darck">
 							Даете ли вы гарантию, что уборка будет выполнена качественно?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">
+							<p class="title title_20 medium title_darck">
 								Мы гарантируем качество нашей уборки! Ваше помещение
 								будет сиять чистотой, а вы останетесь довольны результатом.
 								Наша команда профессионалов использует только самое современное
@@ -834,11 +815,11 @@
 							</p>
 						</div>
 						<input type="checkbox" name="chacor" id="chacor5" />
-						<label for="chacor5" class="title title_20 medium">
+						<label for="chacor5" class="title title_20 medium title_darck">
 							Что делать, если уборка выполнена не качественно?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">
+							<p class="title title_20 medium title_darck">
 								Если вы не удовлетворены качеством нашей уборки, пожалуйста,
 								свяжитесь с нами немедленно. Мы ценим ваше мнение и готовы
 								исправить любые недочеты. Пожалуйста, сообщите нам о проблеме,
@@ -848,21 +829,21 @@
 							</p>
 						</div>
 						<input type="checkbox" name="chacor" id="chacor6" />
-						<label for="chacor6" class="title title_20 medium">
+						<label for="chacor6" class="title title_20 medium title_darck">
 							Как сделать заказ?
 						</label>
 						<div class="acor-body">
-							<p class="title title_20 medium">
+							<p class="title title_20 medium title_darck">
 								Для заказа вы можете оставить заявку или позвонить по номеру:
 								<br>
 								<a href="tel:+375298936075">
-									<span class="title title_20 semi-bold title_active">
+									<span class="title title_20 semi-bold title_active title_darck">
 										+375 (29) 893-60-75
 									</span>
 								</a>
 								<br>
 								<a href="tel:+375339911445">
-									<span class="title title_20 semi-bold title_active">
+									<span class="title title_20 semi-bold title_active title_darck">
 										+375 (33) 991-14-45
 									</span>
 								</a>
@@ -872,21 +853,21 @@
 				</div>
 				<div class="questions_wrapper_application">
 					<div class="questions_wrapper_application_text">
-						<span class="title title_24 medium">Оставьте заявку на бесплатную консультацию</span>
-						<span class="title">Напишите нам <br> в удобный для вас мессенджер</span>
+						<span class="title title_24 medium title_darck">Оставьте заявку на бесплатную консультацию</span>
+						<span class="title title_darck">Напишите нам <br> в удобный для вас мессенджер</span>
 					</div>
 					<div class="questions_wrapper_application_soc">
 						<a href="viber://chat?number=%2B375298507079" class="questions_wrapper_application_soc_a1">
 							<img src="img/viber.png" alt="viber">
-							<span class="title"><b>Написать в</b> Viber</span>
+							<span class="title title_darck"><b>Написать в</b> Viber</span>
 						</a>
 						<a href="https://t.me/+375298507079" class="questions_wrapper_application_soc_a2">
 							<img src="img/telegram.png" alt="telegram">
-							<span class="title"><b>Написать в</b> Telegram</span>
+							<span class="title title_darck"><b>Написать в</b> Telegram</span>
 						</a>
 					</div>
 					<form class="questions_form" action="#">
-						<span class="title">Или оставьте заявку на звонок</span>
+						<span class="title title_darck">Или оставьте заявку на звонок</span>
 						<input name="phone" type="text" placeholder="Ваш номер телефона" required>
 						<input type="hidden" name="theme" value="Заявка">
 						<input type="hidden" name="utm_source" class="utm_source" value="">
@@ -897,7 +878,7 @@
 						<button type="submit" onclick="" class="button button_green">Отправить заявку</button>
 					</form>
 					<div class="questions_form_check">
-						<label for="checkbox" class="checkbox-label title title_14" >
+						<label for="checkbox" class="checkbox-label title title_14 title_darck" >
 							<input type="checkbox" id="checkbox" class="checkbox" checked>
 							<span class="checkbox-view">
 								<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -923,13 +904,13 @@
 		<img src="img/list2.png" alt="list" class="questions_list2">
 	</section>
 	<section class="map">
-		<span class="title title_32 title_white semi-bold">Контакты</span>
+		<span class="title title_32  semi-bold">Контакты</span>
 		<div class="map_wrapper">
 			<div class="map_wrapper_inf">
 				<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M12.0281 4.92909C11.4156 2.23409 9.06481 1.02075 6.99981 1.02075C6.99981 1.02075 6.99981 1.02075 6.99398 1.02075C4.93481 1.02075 2.57814 2.22825 1.96564 4.92325C1.28314 7.93325 3.12648 10.4824 4.79481 12.0866C5.41314 12.6816 6.20648 12.9791 6.99981 12.9791C7.79314 12.9791 8.58648 12.6816 9.19898 12.0866C10.8673 10.4824 12.7106 7.93909 12.0281 4.92909ZM6.99981 7.85159C5.98481 7.85159 5.16231 7.02909 5.16231 6.01409C5.16231 4.99909 5.98481 4.17659 6.99981 4.17659C8.01481 4.17659 8.83731 4.99909 8.83731 6.01409C8.83731 7.02909 8.01481 7.85159 6.99981 7.85159Z" fill="black" />
 				</svg>
-				<span class="title title_14 ">
+				<span class="title title_14 title_darck">
 					220036, г. Минск,
 					<br>
 					пер. Загородный 3-й, д. 4В, пом. 14.
@@ -944,12 +925,12 @@
 				</svg>
 				<div class="map_wrapper_inf_tel">
 					<a href="tel:+375298936075">
-						<span class="title title_14 semi-bold title_active">
+						<span class="title title_14 semi-bold title_active title_darck">
 							+375 (29) 893-60-75
 						</span>
 					</a>
 					<a href="tel:+375339911445">
-						<span class="title title_14 semi-bold title_active">
+						<span class="title title_14 semi-bold title_active title_darck">
 							+375 (33) 991-14-45
 						</span>
 					</a>
@@ -978,7 +959,7 @@
 					</g>
 				</svg>
 				<a href="mailto:dino-ecoroom@mail.ru">
-					<span class="title title_14 semi-bold title_active">
+					<span class="title title_14 semi-bold title_active title_darck">
 						dino-ecoroom@mail.ru
 					</span>
 				</a>
@@ -1005,7 +986,7 @@
 						<img src="icons/logo.svg" alt="logo">
 					</a>
 					<a href="https://target-group.by/" class="footer_wrapper_inf_target">
-						<span class="title title_white">Разработка сайта:</span>
+						<span class="title ">Разработка сайта:</span>
 						<svg width="147" height="43" viewBox="0 0 147 43" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M52.5005 10.4326L50.1683 10.4471L50.2302 19.093L48.2089 19.1056L48.147 10.4596L45.8147 10.4741L45.8022 8.72928L52.488 8.68785L52.5005 10.4326Z" fill="white" />
 							<path d="M60.295 19.0307L59.362 16.8554L55.1795 16.8813L54.2777 19.068L52.0854 19.0815L56.4734 8.66316L58.0594 8.65333L62.4718 19.0172L60.295 19.0307ZM55.8051 15.2261L58.7594 15.2078L57.2555 11.4781L55.8051 15.2261Z" fill="white" />
@@ -1038,7 +1019,7 @@
 						</svg>
 					</a>
 				</div>
-				<span class="title title_14 title_white">© 2024 Все права защищены</span>
+				<span class="title title_14 ">© 2024 Все права защищены</span>
 			</div>
 		</div>
 	</footer>

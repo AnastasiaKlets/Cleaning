@@ -339,3 +339,21 @@
         }
     }
 }
+.surveyImg{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &_btn{
+        position: absolute;
+        left: 35%;
+        right: 35%;
+        top:40%;
+    }
+    &_title{
+        position: absolute;
+        left: 35%;
+        top: 20%;
+    }
+}
