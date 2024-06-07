@@ -1,0 +1,70 @@
+.vacancies{
+  margin-top: 140px;
+  position: relative;
+  h2{
+    position: absolute;
+    top: -60px;
+  }
+  &_wrapper{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    img{
+      width: 100%;
+    }
+    &_col1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      justify-items: stretch;
+      align-items: stretch;
+      &_row1{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+      }
+
+      &_row2{
+        position: relative;
+        span{
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+          background: rgba(255, 255, 255, 0.84);
+          border-radius: 10px;
+          display: flex;
+          width: 50%;
+          padding: 14px 0;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          z-index: 2;
+          bottom: 5px;
+        }
+      }
+    }
+    &_col2{
+      display: grid;
+      grid-template-columns: 49% 49%;
+      justify-content: space-between;
+      justify-items: stretch;
+      align-items: stretch;
+      &_img{
+        position: relative;
+        span{
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+          background: rgba(255, 255, 255, 0.84);
+          border-radius: 10px;
+          display: flex;
+          width: 100%;
+          padding: 14px 0;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          z-index: 2;
+          bottom: 5px;
+        }
+      }
+
+    }
+  }
+}
