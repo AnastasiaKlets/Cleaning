@@ -195,6 +195,12 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
             dots.forEach(dot => dot.classList.remove(`${mainClass}_active`));
             dots[slideIndex-1].classList.add(`${mainClass}_active`);
         }
+        if (containerSelector.includes('gallery')) {
+            let gallery_images = document.querySelectorAll('.gallery_slide img')
+            let new_src = gallery_images[slideIndex - 1].getAttribute('src');
+            let main_image = document.querySelector('.gallery_image img');
+            main_image.setAttribute('src', new_src);
+        }
         if (currentCounter) {
             current.textContent = slideIndex;
         }
@@ -297,7 +303,7 @@ if (document.querySelector('.survey') != null) {
 
 if (document.querySelector('.gallery_field') != null) {
     slider({
-        containerSelector: '.gallery_container',
+        containerSelector: '.gallery_image',
         slideSelector: '.gallery_slide',
         nextSlideSelector: '.gallery_next',
         prevSlideSelector: '.gallery_prev',

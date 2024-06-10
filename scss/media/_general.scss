@@ -11,6 +11,9 @@
 .flex {
 	display: flex;
 }
+.trans-5 {
+	transition: 0.5s all;
+}
 
 @media (max-width: 992px) {
 	.container {
