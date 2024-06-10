@@ -1,8 +1,9 @@
 .header{
   background: #1e3018;
-  position: sticky;
+  position: fixed;
+  transition: all .6s ease;
   z-index: 3;
-  transition: .6s;
+  width: 100%;
   &_wrapper{
     display: flex;
     flex-direction: column;
@@ -12,77 +13,59 @@
       width: 100%;
       justify-content: space-between;
       align-items: center;
-      &_logo{
-        width: 20%;
-        img{
-          width: 100%;
-        }
-      }
-      &_numbers{
+      &_adders{
         display: flex;
-        flex-direction: column;
-        gap: 9px;
-        &_mts{
-          display: flex;
-          align-items: center;
-          gap: 2px;
-          a{
-            display: flex;
-            gap: 10px;
-          }
-        }
-        &_text{
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          &_circle{
-            border-radius: 100%;
-            height: 8px;
-            width: 8px;
-            fill: #3ebb66;
-            animation: glowing 1300ms infinite;
-            @keyframes glowing {
-              0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
-              50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
-              100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
-            }
-          }
-        }
-      }
-      &_time{
-        display: flex;
+        gap:10px;
         align-items: center;
-        justify-content: space-between;
-        img{
-          width: 20%;
-        }
       }
       &_soc{
         display: flex;
         gap: 10px;
-        &_img{
-          width: 90%;
-          transition: 0.5s;
+        a{
+          transform: scale(1);
+          transition: .6s;
         }
-        &_img:hover{
-          width: 95%;
-          transition: 0.5s;
+        a:hover{
+          transform: scale(1.2);
+          transition: .6s;
         }
       }
-      &_btn{
+      &_phone{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &_tel{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      &_logo {
         width: 20%;
-        height: 43px;
+        position: relative;
+        bottom: 8px;
+        img {
+          width: 100%;
+        }
+      }
+      button{
+        width: 18%;
+        height: 36px;
       }
     }
     &_blockUnder{
       display: flex;
       width: 100%;
-      justify-content: space-evenly;
+      justify-content: flex-end;
       align-items: center;
-      padding: 20px 0;
+      padding: 0;
+      gap: 20px;
     }
   }
 }
+.header.out {
+  transform: translateY(-100%);
+}
+
 .menu{
   display: none;
 }

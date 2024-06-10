@@ -350,11 +350,20 @@
         left: 35%;
         right: 35%;
         top: 30%;
+        animation: shadow 1.8s ease infinite;
     }
     &_title{
         position: absolute;
         left: 35%;
         top: 15%;
+    }
+}
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgb(23 60 41 / 67%);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(55, 141, 250, 0);
     }
 }
 .surveyImg_inf{

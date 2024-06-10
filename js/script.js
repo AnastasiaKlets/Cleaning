@@ -1,3 +1,17 @@
+let header = $('.header'),
+    scrollPrev = 0;
+
+$(window).scroll(function() {
+    let scrolled = $(window).scrollTop();
+
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+        header.addClass('out');
+    } else {
+        header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+});
+
 $('input[name="phone"]').mask("+375(99)999-99-99");
 
 let baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
