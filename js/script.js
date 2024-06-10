@@ -449,3 +449,38 @@ function openCity2(evt, cityName) {
     evt.currentTarget.className += " bntGreen";
 }
 
+
+
+const prev = document.querySelector('.slider-control.left-arrow');
+const next = document.querySelector('.slider-control.right-arrow');
+const sliderItems = document.querySelector('.slider-items');
+const sliderItem = document.querySelector('.slider-item');
+
+// [...sliderItems.children].forEach(item=>item.style.transition = '200ms ease-out transform');
+
+let currentSlide = 1;
+
+next.addEventListener("click", () => {
+    // if (sliderItems.children[currentSlide%sliderItems.children.length].classList.contains('first-item')) currentSlide=1; //xnj
+    [...sliderItems.children].forEach((item, index, arr) => {
+        const move = (index < currentSlide%arr.length ? sliderItem.clientWidth*arr.length : 0) + -sliderItem.clientWidth*(currentSlide%arr.length);
+        item.style.transition = /* чтото чтобы двигались только видимые элементы */ false  ? 'none':'200ms ease-out transform';
+        item.style.transform = `translateX(${move}px)`;
+        //item.scrollBy({ left:move, behavior: "smooth" });
+    })
+
+    currentSlide++;
+
+});
+prev.addEventListener("click", () => {
+    if (currentSlide <= 1 ) return; //что-то сделат ьчтобы изначально не листало влево но при возвращении доилстывало до начала
+    [...sliderItems.children].forEach((item,index, arr) => {
+            const move = (index < currentSlide%arr.length ? sliderItem.clientWidth*arr.length : 0) + -sliderItem.clientWidth*(currentSlide%arr.length);
+            item.style.transform = `translateX(${move}px)`;
+            item.scrollBy({ left:-move, behavior: "smooth" });
+        }
+    );
+    currentSlide--;
+
+});
+
