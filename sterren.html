@@ -9,6 +9,7 @@
 <body>
     <button data-survey class="button button_green">Узнать стоимость</button>
     <button data-consult class="button button_green">Заказать звонок</button>
+    <button data-team class="button button_green">Попасть в команду</button>
 	<section class="survey">
         <div class="survey_modal">
             <form class="survey_form" action="#">
@@ -455,6 +456,33 @@
                 </div>
             </div>
             <div class="consult_image">
+                <img src="img/glove.png" alt="glove">
+            </div>
+		</div>
+	</div>
+    <div class="team">
+		<div class="team_modal">
+			<div class="team_wrapper">
+                <div class="team_close"><img data-close src="icons/close.svg" alt="close"></div>
+                <div class="team_content">
+                    <div class="title title_40 bold">Мы будем рады видеть Вас у себя в команде!</div>
+                    <div class="title title_24">Введите ваш номер телефона и мы Вам перезвоним в течение 10 минут</div>
+                    <form class="team_form" action="#">
+                        <input type="text" name="phone" placeholder="+375 __ ___ __ __" class="team_form_input" required>
+                        <label for="team_checkbox" class="team_label">
+                            <input type="checkbox" name="checkbox" id="team_checkbox" class="team_checkbox" required checked>
+                            <span class="team_view">
+                                <div class="team_icon">
+                                    <img src="icons/policy.svg" alt="policy">
+                                </div>
+                            </span>
+                            <div class="title title_16"><span>Вы соглашаетесь на&nbsp; <span class="policy">обработку персональных данных</span></span></div>
+                        </label>
+                        <button type="submit" class="button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="team_image">
                 <img src="img/glove.png" alt="glove">
             </div>
 		</div>

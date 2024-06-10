@@ -321,6 +321,9 @@ if (document.querySelector('.gallery_field') != null) {
 if (document.querySelector('.consult') != null) {
     modal('[data-consult]', 'data-close', '.consult');
 }
+if (document.querySelector('.team') != null) {
+    modal('[data-team]', 'data-close', '.team');
+}
 
 const survey_buttons = document.querySelectorAll('.button.next, .button_back');
 

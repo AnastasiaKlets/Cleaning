@@ -11,7 +11,7 @@
 
 }
 @media (max-width: 992px) {
-    .consult {
+    .consult, .team {
         &_modal {
             padding: 16px 15px;
             width: calc(100% - 30px);
@@ -48,6 +48,9 @@
         }
         .title_24 {
             margin-top: 3px;
+        }
+        .title_24, .title_40 {
+            text-align: center;
         }
         .button {
             width: 100%;

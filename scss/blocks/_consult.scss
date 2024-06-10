@@ -1,4 +1,4 @@
-.consult {
+.consult, .team {
     position: relative;
     display: none;
     position: fixed;
@@ -109,10 +109,10 @@
         width: 90.47%;
     }
 }
-.consult.show{
+.consult.show, .team.show {
     animation: fadeIn 1s;
 }
-.consult.hide {
+.consult.hide, .team.hide {
     animation: fadeOut 1s;
 }
 
