@@ -1,0 +1,65 @@
+@media (max-width:1720px) {
+
+}
+@media (max-width:1600px) {
+
+}
+@media (max-width:1440px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+    .consult, .team {
+        &_modal {
+            padding: 16px 15px;
+            width: calc(100% - 30px);
+            max-width: none;
+            height: calc(95vh - 32px);
+            max-height: none;
+        }
+        &_close {
+            top: 17px;
+            right: 17px;
+        }
+        &_wrapper {
+            padding: 17px 16px;
+            height: calc(100% - 34px);
+        }
+        &_image {
+            right: 6%;
+            bottom: -4px;
+            width: 17.62%;
+        }
+        &_content {
+            padding-top: 33px;
+            width: 100%;
+        }
+        &_form {
+            margin-top: 20px;
+            width: 100%;
+            &_input {
+                height: 24px;
+            }
+        }
+        &_label {
+            width: 100%;
+        }
+        .title_24 {
+            margin-top: 3px;
+        }
+        .title_24, .title_40 {
+            text-align: center;
+        }
+        .button {
+            width: 100%;
+        }
+    }     
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}

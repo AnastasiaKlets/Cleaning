@@ -791,7 +791,38 @@
 			</div>
 		</div>
 	</section>
-
+	<section class="gallery">
+		<div class="container">
+			<div class="title title_32 semi-bold">Примеры работ</div>
+			<div class="gallery_container">
+				<img class="gallery_prev" src="icons/circle_arrow.svg" alt="arow">
+				<img class="gallery_next" src="icons/circle_arrow.svg" alt="arow">
+				<div class="gallery_image">
+					<img src="img/gallery/gallery_1.png" alt="gallery">
+				</div>
+				<div class="gallery_wrapper">
+					<div class="gallery_field">
+						<div class="gallery_slide">
+							<img class="pc" src="img/gallery/gallery_1.png" alt="gallery">
+							<img class="mobile" src="img/gallery/gallery_1_m.png" alt="gallery">
+						</div>
+						<div class="gallery_slide">
+							<img class="pc" src="img/gallery/gallery_2.png" alt="gallery">
+							<img class="mobile" src="img/gallery/gallery_2_m.png" alt="gallery">
+						</div>
+						<div class="gallery_slide">
+							<img class="pc" src="img/gallery/gallery_3.png" alt="gallery">
+							<img class="mobile" src="img/gallery/gallery_3_m.png" alt="gallery">
+						</div>
+						<div class="gallery_slide">
+							<img class="pc" src="img/gallery/gallery_4.png" alt="gallery">
+							<img class="mobile" src="img/gallery/gallery_4_m.png" alt="gallery">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div class="wrapper">
 		<div class="container">
 			<div class="slider-container">
@@ -845,6 +876,57 @@
 						</div>
 					</div>
 				</div>
+
+			</div>
+			<div class="slider-containerMob">
+				<swiper-container class="mySwiper" scrollbar-hide="true">
+					<swiper-slide>
+						<div class="slider-item first-item">
+							<img src="img/reviews/img.png" alt="">
+							<div class="title">
+								<img src="img/reviews/photo.png" alt="photo">
+								<span class="title ">
+									<b class="title_20">Анна</b>
+										<br>
+									Я очень довольна услугами компании.
+									Они быстро и качественно почистили мой ковер,
+									и он теперь выглядит как новый. Рекомендую всем!
+								</span>
+							</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="slider-item">
+							<img src="img/reviews/img2.png" alt="">
+							<div class="title">
+								<img src="img/reviews/photo2.png" alt="photo">
+								<span class="title">
+								<b class="title_20">Анна</b>
+									<br>
+								Я очень довольна услугами компании.
+								Они быстро и качественно почистили мой ковер,
+								и он теперь выглядит как новый. Рекомендую всем!
+							</span>
+							</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="slider-item">
+							<img src="img/reviews/img3.png" alt="">
+							<div class="title">
+								<img src="img/reviews/photo3.png" alt="photo">
+								<span class="title">
+								<b class="title_20">Анна</b>
+									<br>
+								Я очень довольна услугами компании.
+								Они быстро и качественно почистили мой ковер,
+								и он теперь выглядит как новый. Рекомендую всем!
+							</span>
+							</div>
+						</div>
+					</swiper-slide>
+				</swiper-container>
+				<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 			</div>
 		</div>
@@ -1206,6 +1288,96 @@
 			</div>
 		</div>
 	</footer>
+	<div class="consult">
+		<div class="consult_modal">
+			<div class="consult_wrapper">
+				<div class="consult_close"><img data-close src="icons/close.svg" alt="close"></div>
+				<div class="consult_content">
+					<div class="title title_40 bold">Заказать звонок</div>
+					<div class="title title_24">Введите ваш номер телефона и мы Вам перезвоним в течение 10 минут</div>
+					<form class="consult_form" action="#">
+						<input type="hidden" name="theme" value="Заказ звонка">
+						<input type="hidden" name="utm_source" class="utm_source" value="">
+						<input type="hidden" name="utm_medium" class="utm_medium" value="">
+						<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+						<input type="hidden" name="utm_content" class="utm_content" value="">
+						<input type="hidden" name="utm_term" class="utm_term" value="">
+						<input type="text" name="phone" placeholder="+375 __ ___ __ __" class="consult_form_input" required>
+						<label for="consult_checkbox" class="consult_label">
+							<input type="checkbox" name="checkbox" id="consult_checkbox" class="consult_checkbox" required checked>
+							<span class="consult_view">
+                                <div class="consult_icon">
+                                    <img src="icons/policy.svg" alt="policy">
+                                </div>
+                            </span>
+							<div class="title title_16"><span>Вы соглашаетесь на&nbsp; <span class="policy">обработку персональных данных</span></span></div>
+						</label>
+						<button type="submit" class="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="consult_image">
+				<img src="img/glove.png" alt="glove">
+			</div>
+		</div>
+	</div>
+	<div class="team">
+		<div class="team_modal">
+			<div class="team_wrapper">
+				<div class="team_close"><img data-close src="icons/close.svg" alt="close"></div>
+				<div class="team_content">
+					<div class="title title_40 bold">Мы будем рады видеть Вас у себя в команде!</div>
+					<div class="title title_24">Введите ваш номер телефона и мы Вам перезвоним в течение 10 минут</div>
+					<form class="team_form" action="#">
+						<input type="hidden" name="theme" value="Заявка в команду">
+						<input type="hidden" name="utm_source" class="utm_source" value="">
+						<input type="hidden" name="utm_medium" class="utm_medium" value="">
+						<input type="hidden" name="utm_campaign" class="utm_campaign" value="">
+						<input type="hidden" name="utm_content" class="utm_content" value="">
+						<input type="hidden" name="utm_term" class="utm_term" value="">
+						<input type="text" name="phone" placeholder="+375 __ ___ __ __" class="team_form_input" required>
+						<label for="team_checkbox" class="team_label">
+							<input type="checkbox" name="checkbox" id="team_checkbox" class="team_checkbox" required checked>
+							<span class="team_view">
+                                <div class="team_icon">
+                                    <img src="icons/policy.svg" alt="policy">
+                                </div>
+                            </span>
+							<div class="title title_16"><span>Вы соглашаетесь на&nbsp; <span class="policy">обработку персональных данных</span></span></div>
+						</label>
+						<button type="submit" class="button">Отправить</button>
+					</form>
+				</div>
+			</div>
+			<div class="team_image">
+				<img src="img/glove.png" alt="glove">
+			</div>
+		</div>
+	</div>
+	<div class="survey thanks">
+		<div class="survey_modal">
+			<div class="survey_wrapper">
+				<div class="survey_content">
+					<div class="survey_header">
+						<div class="title title_40 medium">Спасибо!<br>Ваш расчёт и бонусы успешно оформлены!</div>
+						<div class="title title_20 medium">Мы свяжемся с Вами в ближайшее время по указанному телефону!</div>
+					</div>
+					<div class="survey_result_body">
+						<button class="button" data-close type="submit">Закрыть</button>
+					</div>
+				</div>
+				<div class="survey_banner">
+					<div class="survey_banner_comment">
+						<div class="survey_banner_images">
+							<img src="icons/user.svg" alt="user">
+							<img src="icons/hint.svg" alt="hint">
+						</div>
+						<div class="title title_14">Клинер приезжает со своим инвентарём и средствами для уборки</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

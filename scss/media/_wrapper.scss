@@ -1,0 +1,42 @@
+@media (max-width: 992px) {
+.wrapper{
+  .slider-container_titleBtn_btn, .slider-items-container{
+    display: none;
+  }
+  .slider-containerMob{
+    display: inline;
+  }
+  h2{
+    margin-bottom: 15px;
+  }
+  .slider-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    img{
+      width: 100%;
+    }
+    .title{
+      display: flex;
+      gap: 10px;
+      img{
+        width: 10%;
+        height: 10%;
+      }
+      span{
+        display: flex;
+        flex-direction: column;
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+}
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+}
