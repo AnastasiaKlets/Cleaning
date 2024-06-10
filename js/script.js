@@ -196,7 +196,7 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
             dots[slideIndex-1].classList.add(`${mainClass}_active`);
         }
         if (containerSelector.includes('gallery')) {
-            let gallery_images = document.querySelectorAll('.gallery_slide img')
+            let gallery_images = document.querySelectorAll('.gallery_slide .pc')
             let new_src = gallery_images[slideIndex - 1].getAttribute('src');
             let main_image = document.querySelector('.gallery_image img');
             main_image.setAttribute('src', new_src);
@@ -320,9 +320,11 @@ if (document.querySelector('.gallery_field') != null) {
 
 if (document.querySelector('.consult') != null) {
     modal('[data-consult]', 'data-close', '.consult');
+    modal('[data-thanks]', 'data-close', '.thanks');
 }
 if (document.querySelector('.team') != null) {
     modal('[data-team]', 'data-close', '.team');
+    modal('[data-thanks]', 'data-close', '.thanks');
 }
 
 const survey_buttons = document.querySelectorAll('.button.next, .button_back');
@@ -410,7 +412,13 @@ function sendPhp(name, data) {
         contentType: false,
         success: function (data) {
             $(`.${name}_form`).trigger('reset');
-            closeModal(`.${name}`)
+            if (name == 'survey' || name == 'consult' || name == 'team') {
+                closeModal(`.${name}`)
+            }
+            openModal('.thanks');
+            setTimeout(function(){
+                closeModal('.thanks');
+            }, 6000)
         }
     });
 }

@@ -109,6 +109,14 @@
         width: 90.47%;
     }
 }
+.thanks {
+    .survey_content {
+        justify-content: center;
+    }
+    .title_20, .button {
+        margin-top: 23px;
+    }
+}
 .consult.show, .team.show {
     animation: fadeIn 1s;
 }
