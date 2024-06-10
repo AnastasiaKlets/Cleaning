@@ -50,32 +50,8 @@
         }
     }
     &_content {
+        padding-top: 22px;
         width: 69%;
-    }
-    &_checkbox {
-        position: absolute;
-        z-index: -1;
-    }
-    &_label {
-        display: flex;
-        cursor: pointer;
-    }
-    &_view {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 16px;
-        height: 16px;
-        margin-right: 10px;
-        background: #15412e;
-        transition: .3s;
-    }
-    &_icon {
-        opacity: 0;
-        transition: .3s;
-    }
-    &_checkbox:checked + &_view &_icon {
-        opacity: 1;
     }
     &_form {
         margin-top: 23px;
@@ -84,8 +60,8 @@
         flex-direction: column;
         gap: 30px;
         &_input {
-            width: 100%;
-            height: 22px;
+            width: calc(100% - 44px);
+            height: 32px;
             padding: 12px 22px;
             border-radius: 10px;
             font-weight: 400;
@@ -99,6 +75,10 @@
                 color: rgba(0, 0, 0, 0.6);
             }
         }
+    }
+    &_checkbox {
+        position: absolute;
+        z-index: -1;
     }
     &_label {
         display: flex;
