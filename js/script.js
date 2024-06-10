@@ -14,9 +14,8 @@ $(window).scroll(function() {
 
 $('input[name="phone"]').mask("+375(99)999-99-99");
 
-
 let baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-let newUrl = baseUrl ;
+let newUrl = baseUrl + '?utm_source=yandex&utm_medium=cpc&utm_campaign=%7Bcampaign_name_lat%7D&utm_content=%7Bad_id%7D&utm_term=%7Bkeyword%7D';
 history.pushState(null, null, newUrl);
 
 let utms_names = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
@@ -210,6 +209,12 @@ function slider({containerSelector, slideSelector, nextSlideSelector, prevSlideS
             dots.forEach(dot => dot.classList.remove(`${mainClass}_active`));
             dots[slideIndex-1].classList.add(`${mainClass}_active`);
         }
+        if (containerSelector.includes('gallery')) {
+            let gallery_images = document.querySelectorAll('.gallery_slide .pc')
+            let new_src = gallery_images[slideIndex - 1].getAttribute('src');
+            let main_image = document.querySelector('.gallery_image img');
+            main_image.setAttribute('src', new_src);
+        }
         if (currentCounter) {
             current.textContent = slideIndex;
         }
@@ -312,7 +317,7 @@ if (document.querySelector('.survey') != null) {
 
 if (document.querySelector('.gallery_field') != null) {
     slider({
-        containerSelector: '.gallery_container',
+        containerSelector: '.gallery_image',
         slideSelector: '.gallery_slide',
         nextSlideSelector: '.gallery_next',
         prevSlideSelector: '.gallery_prev',
@@ -325,6 +330,15 @@ if (document.querySelector('.gallery_field') != null) {
         duration: 3000,
         swipe: true,
     });
+}
+
+if (document.querySelector('.consult') != null) {
+    modal('[data-consult]', 'data-close', '.consult');
+    modal('[data-thanks]', 'data-close', '.thanks');
+}
+if (document.querySelector('.team') != null) {
+    modal('[data-team]', 'data-close', '.team');
+    modal('[data-thanks]', 'data-close', '.thanks');
 }
 
 const survey_buttons = document.querySelectorAll('.button.next, .button_back');
@@ -412,10 +426,17 @@ function sendPhp(name, data) {
         contentType: false,
         success: function (data) {
             $(`.${name}_form`).trigger('reset');
-            closeModal(`.${name}`)
+            if (name == 'survey' || name == 'consult' || name == 'team') {
+                closeModal(`.${name}`)
+            }
+            openModal('.thanks');
+            setTimeout(function(){
+                closeModal('.thanks');
+            }, 6000)
         }
     });
 }
+
 
 function openCity(cityName) {
     let i;

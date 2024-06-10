@@ -66,9 +66,11 @@
     z-index: 100;
     &.left-arrow {
       left: -1rem;
+      cursor: pointer;
     }
     &.right-arrow {
-      right: -1rem;
+      right: 0;
+      cursor: pointer;
     }
   }
 }

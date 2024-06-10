@@ -21,6 +21,35 @@
       img{
         width: 100%;
       }
+      position: relative;
+      [data-tooltip]::after {
+        content: attr(data-tooltip); /* Выводим текст */
+        position: absolute; /* Абсолютное позиционирование */
+        width: 300px; /* Ширина подсказки */
+        left: 0; top: 0; /* Положение подсказки */
+        background: #3989c9; /* Синий цвет фона */
+        color: #fff; /* Цвет текста */
+        padding: 0.5em; /* Поля вокруг текста */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+        pointer-events: none; /* Подсказка */
+        opacity: 0; /* Подсказка невидима */
+        transition: 1s; /* Время появления подсказки */
+      }
+      [data-tooltip]:hover::after {
+        opacity: 1; /* Показываем подсказку */
+        top: 2em; /* Положение подсказки */
+      }
+      .cleaningUp_wrapper_inf{
+        &_0{
+          position: absolute;
+          background: rgba(21, 65, 46, 0.76);;
+          animation: shadow 1.8s ease infinite;
+          height: 24px;
+          width: 24px;
+          border-radius: 100%;
+        }
+
+      }
     }
     &_btn{
       display: flex;
@@ -28,17 +57,20 @@
       justify-content: center;
       width: 100%;
       top: -30px;
+      z-index: 10;
       &_dop{
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
         background: #fff;
         border-radius: 20px;
         height: 74px;
         width: 70%;
+        cursor: pointer;
         display: flex;
       }
       button{
         border-left: 1px solid rgba(31, 58, 21, 0.25);
         border-right: 1px solid rgba(31, 58, 21, 0.25);
+        cursor: pointer;
       }
     }
   }
@@ -91,4 +123,157 @@
 }
 .cleaningUp_wrapper_btn_dopMob, .cleaningUp_wrapper_ulMob{
   display: none;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgb(23 60 41 / 67%);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(55, 141, 250, 0);
+  }
+}
+.cleaningUp_wrapper_inf_1{
+  top: 56%;
+  right: 24%;
+}
+.cleaningUp_wrapper_inf_2{
+  top: 15%;
+  right: 34%;
+}
+.cleaningUp_wrapper_inf_4{
+  bottom: 9%;
+  left: 5%;
+}
+.cleaningUp_wrapper_inf_5{
+  bottom: 15%;
+  left: 26%;
+}
+.cleaningUp_wrapper_inf_6{
+  left: 40%;
+  bottom: 46%;
+}
+.cleaningUp_wrapper_inf_7{
+  bottom: 5%;
+  right: 22%;
+}
+.cleaningUp_wrapper_inf_8{
+  bottom: 15%;
+  right: 50%;
+}
+.cleaningUp_wrapper_inf_9{
+  top: 10%;
+  left: 50%;
+}
+.cleaningUp_wrapper_inf_10{
+  bottom: 10%;
+  left: 61%;
+}
+
+.cleaningUp_wrapper_inf_11{
+  top: 60%;
+  right: 48%;
+}
+.cleaningUp_wrapper_inf_12{
+  top: 63%;
+  right: 76%;
+}
+.cleaningUp_wrapper_inf_13{
+  bottom: 9%;
+  left: 5%;
+}
+.cleaningUp_wrapper_inf_14{
+  bottom: 56%;
+  left: 78%;
+
+}
+.cleaningUp_wrapper_inf_15{
+  bottom: 15%;
+  left: 26%;
+}
+.cleaningUp_wrapper_inf_16{
+  left: 65%;
+  bottom: 46%;
+}
+.cleaningUp_wrapper_inf_17{
+  bottom: 5%;
+  right: 22%;
+}
+.cleaningUp_wrapper_inf_18{
+  bottom: 80%;
+  right: 19%;
+}
+.cleaningUp_wrapper_inf_19{
+  top: 93%;
+  left: 50%;
+}
+
+.cleaningUp_wrapper_inf_20{
+  top: 60%;
+  right: 48%;
+}
+.cleaningUp_wrapper_inf_21{
+  top: 27%;
+  right: 70%;
+
+}
+.cleaningUp_wrapper_inf_22{
+  top: 39%;
+  right: 45%;
+
+}
+.cleaningUp_wrapper_inf_23{
+  bottom: 26%;
+  left: 79%;
+}
+.cleaningUp_wrapper_inf_24{
+  bottom: 56%;
+  left: 78%;
+
+}
+.cleaningUp_wrapper_inf_25{
+  bottom: 15%;
+  left: 26%;
+}
+.cleaningUp_wrapper_inf_26{
+  left: 65%;
+  bottom: 46%;
+}
+.cleaningUp_wrapper_inf_27{
+  bottom: 3%;
+  right: 45%;
+}
+
+.cleaningUp_wrapper_inf_28{
+  left: 18%;
+  bottom: 9%;
+}
+.cleaningUp_wrapper_inf_29{
+  bottom: 37%;
+  right: 41%;
+}
+.cleaningUp_wrapper_inf_30{
+  top: 56%;
+  right: 67%;
+}
+.cleaningUp_wrapper_inf_32{
+  top: 48%;
+  right: 17%;
+}
+.cleaningUp_wrapper_inf_33{
+  bottom: 86%;
+  left: 39%;
+}
+.cleaningUp_wrapper_inf_37{
+  bottom: 40%;
+  right: 22%;
+}
+
+.cleaningUp_wrapper_inf_38{
+  bottom: 47%;
+  left: 39%;
+}
+.cleaningUp_wrapper_inf_39{
+  bottom: 15%;
+  right: 22%;
 }
