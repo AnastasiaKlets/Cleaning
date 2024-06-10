@@ -318,6 +318,10 @@ if (document.querySelector('.gallery_field') != null) {
     });
 }
 
+if (document.querySelector('.consult') != null) {
+    modal('[data-consult]', 'data-close', '.consult');
+}
+
 const survey_buttons = document.querySelectorAll('.button.next, .button_back');
 
 survey_buttons.forEach(button => {

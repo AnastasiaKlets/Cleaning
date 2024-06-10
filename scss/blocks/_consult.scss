@@ -1,0 +1,156 @@
+.consult {
+    position: relative;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245,245,245, 0.5);
+    &_modal {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 21px 27px;
+        width: 67.28%;
+        max-width: 942px;
+        height: calc(95vh - 42px);
+        max-height: 514px;
+        border-radius: 10px;
+        background: #1e3018;
+    }
+    &_close {
+        position: absolute;
+        z-index: 5;
+        height: 22px;
+        top: 24px;
+        right: 24px;
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &_wrapper {
+        position: relative;
+        overflow-y: auto;
+        padding: 24px 51px;
+        height: calc(100% - 48px);
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+    &_image {
+        position: absolute;
+        right: 9.44%;
+        bottom: -4px;
+        width: 18.5%;
+        img {
+            width: 100%;
+        }
+    }
+    &_content {
+        width: 69%;
+    }
+    &_checkbox {
+        position: absolute;
+        z-index: -1;
+    }
+    &_label {
+        display: flex;
+        cursor: pointer;
+    }
+    &_view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        background: #15412e;
+        transition: .3s;
+    }
+    &_icon {
+        opacity: 0;
+        transition: .3s;
+    }
+    &_checkbox:checked + &_view &_icon {
+        opacity: 1;
+    }
+    &_form {
+        margin-top: 23px;
+        width: 54.9%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &_input {
+            width: 100%;
+            height: 22px;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: 400;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.6);
+            background: #faf9fb;
+            outline: none;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+    }
+    &_label {
+        display: flex;
+        width: 90.47%;
+        cursor: pointer;
+    }
+    &_view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        background: #15412e;
+        transition: .3s;
+    }
+    &_icon {
+        opacity: 0;
+        transition: .3s;
+    }
+    &_checkbox:checked + &_view &_icon {
+        opacity: 1;
+    }
+    .title_24 {
+        margin-top: 23px;
+    }
+    .button {
+        width: 90.47%;
+    }
+}
+.consult.show{
+    animation: fadeIn 1s;
+}
+.consult.hide {
+    animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        display: block;
+        opacity: 1;
+    }
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
