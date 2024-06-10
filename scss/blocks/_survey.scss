@@ -349,11 +349,59 @@
         position: absolute;
         left: 35%;
         right: 35%;
-        top:40%;
+        top: 30%;
     }
     &_title{
         position: absolute;
         left: 35%;
-        top: 20%;
+        top: 15%;
+    }
+}
+.surveyImg_inf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 35px; background: rgba(21, 65, 46, 0.76);
+    padding: 45px 0;
+    top: -45px;
+    align-items: center;
+    &_row1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            width: 20%;
+        }
+        span{
+            text-align: center;
+            width: 60%;
+        }
+        &_inf{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            &_dopMob{
+                display: none;
+            }
+        }
+    }
+    &_row2{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img{
+            width: 20%;
+        }
+        span{
+            text-align: center;
+            width: 60%;
+        }
+        &_inf{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
     }
 }

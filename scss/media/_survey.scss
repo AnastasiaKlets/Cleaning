@@ -140,24 +140,234 @@
     }
     &_btn{
       position: absolute;
-      left: 10%;
-      right: 10%;
-      top:60%;
+      left: 20%;
+      right: 20%;
+      top: 25%;
       height: 51px;
       font-size: 20px;
     }
     &_title{
       position: absolute;
       left: 16%;
-      top: 20%;
+      top: 10%;
       text-align: center;
       right: 16%;
     }
   }
+  .surveyImg_inf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    background: rgba(21, 65, 46, 0.76);
+    padding: 45px 0;
+    top: -45px;
+
+    &_row1{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 17%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 60%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+      }
+    }
+    &_row2{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 17%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 60%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
+  .surveyImg{
+    img{
+      width: 100%;
+      height: 300px;
+    }
+    &_btn{
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      top: 25%;
+      height: 51px;
+      font-size: 20px;
+    }
+    &_title{
+      position: absolute;
+      left: 16%;
+      top: 10%;
+      text-align: center;
+      right: 16%;
+    }
+  }
+  .surveyImg_inf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    background: rgba(21, 65, 46, 0.76);
+    padding: 45px 0;
+    top: -45px;
 
+    &_row1{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 17%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 60%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+        &_dopMob{
+          display: none;
+        }
+      }
+    }
+    &_row2{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 17%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 60%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .surveyImg{
+    img{
+      width: 100%;
+      height: 300px;
+    }
+    &_btn{
+      position: absolute;
+      left: 15%;
+      right: 15%;
+      top: 25%;
+      height: 48px;
+      font-size: 18px;
+    }
+    &_title{
+      position: absolute;
+      left: 16%;
+      top: 10%;
+      text-align: center;
+      right: 16%;
+    }
+  }
+  .surveyImg_inf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    background: rgba(21, 65, 46, 0.76);
+    padding: 30px 0;
+    top: -30px;
 
+    &_row1{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 20%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 80%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        align-items: center;
+        &_dop{
+          display: none;
+        }
+        &_dopMob{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: center;
+          img{
+            width: 17%;
+            height: auto;
+          }
+          span{
+            text-align: center;
+            width: 70%;
+          }
+        }
+      }
+    }
+    &_row2{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      img{
+        width: 20%;
+        height: auto;
+      }
+      span{
+        text-align: center;
+        width: 80%;
+      }
+      &_inf{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
 }
