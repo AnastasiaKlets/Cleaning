@@ -5,6 +5,7 @@
 	<title>Dino EcoRoom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="scss/jquery.fancybox.min.css">
 </head>
 <body>
     <button data-survey class="button button_green">Узнать стоимость</button>
@@ -417,6 +418,10 @@
                             <img class="mobile" src="img/gallery/gallery_1_m.png" alt="gallery">
                         </div>
                         <div class="gallery_slide">
+                            <img class="pc" src="video/video_1.png" data-fancybox data-src="video/video_1.mp4" alt="video">
+                            <img class="mobile" src="video/video_1_m.png" data-fancybox data-src="video/video_1.mp4" alt="video">
+                        </div>
+                        <div class="gallery_slide">
                             <img class="pc" src="img/gallery/gallery_2.png" alt="gallery">
                             <img class="mobile" src="img/gallery/gallery_2_m.png" alt="gallery">
                         </div>
@@ -524,6 +529,7 @@
         </div>
     </div>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
