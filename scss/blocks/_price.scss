@@ -1,0 +1,32 @@
+.prise{
+  .services_wrapper{
+    padding-top: 100px;
+    &_container1{
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_title{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        padding: 44px 0 26px;
+        &_text{
+          display: flex;
+          gap: 100px;
+        }
+      }
+      &_block{
+        display: flex;
+        background: #1F3A16;
+        width: 98%;
+        justify-content: center;
+        &_title{
+          display: flex;
+          justify-content: space-between;
+          width: 95%;
+        }
+      }
+    }
+  }
+}
