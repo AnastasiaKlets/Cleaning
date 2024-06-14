@@ -13,16 +13,47 @@
 @media (max-width: 992px) {
   .prise{
     .services_wrapper{
-      padding-top: 50px;
+      padding-top: 100px;
       &_button{
         flex-direction: column;
       }
     }
   }
+  .prise .services_wrapper_container1_block_text {
+    width: 97.5%;
+  }
+  .prise .services_wrapper_container1_block_title {
+    width: 95%;
+  }
+  .prise .services_wrapper_container1_block_title_text {
+    width: 100%;
+  }
+  .prise .services_wrapper_container1 {
+    padding: 13px 0 13px 10px;
+  }
+  .prise .services_wrapper_container1_title {
+    padding: 21px 0 26px;
+  }
 }
 @media (max-width: 768px) {
-
+  .prise .services_wrapper_container1_block_text {
+    width: 97.5%;
+  }
 }
 @media (max-width: 480px) {
-
+  .prise .services_wrapper_container1_block_text {
+    width: 94.5%;
+  }
+  .prise .services_wrapper_container1_block_title {
+    width: 95%;
+  }
+  .prise .services_wrapper_container1_block_title_text {
+    width: 100%;
+  }
+  .prise .services_wrapper_container1 {
+    padding: 13px 0 13px 10px;
+  }
+  .prise .services_wrapper_container1_title {
+    padding: 21px 0 26px;
+  }
 }

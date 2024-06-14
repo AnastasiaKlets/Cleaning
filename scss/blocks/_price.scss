@@ -3,9 +3,9 @@
     padding-top: 100px;
     &_container1{
       height: fit-content;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: block;
+      padding: 13px 0 13px 19px;
+      width: 100%;
       &_title{
         width: 92%;
         display: flex;
@@ -13,7 +13,8 @@
         padding: 44px 0 26px;
         &_text{
           display: flex;
-          gap: 100px;
+          width: 30%;
+          justify-content: space-between;
         }
       }
       &_block{
@@ -21,12 +22,85 @@
         background: #1F3A16;
         width: 98%;
         justify-content: center;
+        flex-direction: column;
         &_title{
           display: flex;
           justify-content: space-between;
           width: 95%;
+          border-radius: 5px;
+          padding: 20px 0;
+          span{
+            line-height: 125%;
+            padding: 0 0 0 20px;
+          }
+          &_text{
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            &_list{
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+          }
+        }
+        &_text{
+          background: #fff;
+          width: 98.8%;
+          display: flex;
+          align-items: center;
+          padding: 14px 0 14px 20px;
+        }
+        &_list{
+          display: flex;
+          flex-direction: column;
+          padding: 14px 0 4px 30px;
+          ol{
+            padding-bottom: 10px ;
+          }
         }
       }
     }
   }
+}
+.prise{
+  position: relative;
+  &_img1 {
+    position: absolute;
+    z-index: 2;
+    right: 74%;
+    top: 144px;
+    width: 35%;
+    transform: scale(-1, 1) rotate(336deg);
+  }
+  &_img2 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 21%;
+    width: 40%;
+  }
+  &_img3 {
+    position: absolute;
+    z-index: 2;
+    right: 78%;
+    top: 52%;
+    width: 29%;
+    transform: scale(-1, 1) rotate(336deg);
+  }
+  &_img4 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 44%;
+    width: 32%;
+  }
+  &_img5 {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 90%;
+    width: 40%;
+  }
+
 }
