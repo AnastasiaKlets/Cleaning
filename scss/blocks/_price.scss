@@ -51,6 +51,7 @@
           display: flex;
           align-items: center;
           padding: 14px 0 14px 20px;
+          span{ width: fit-content}
         }
         &_list{
           display: flex;
@@ -78,8 +79,8 @@
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 21%;
-    width: 40%;
+    top: 6%;
+    width: 20%;
   }
   &_img3 {
     position: absolute;
@@ -93,8 +94,8 @@
     position: absolute;
     z-index: 2;
     right: 0;
-    top: 44%;
-    width: 32%;
+    top: 39%;
+    width: 23%;
   }
   &_img5 {
     position: absolute;
@@ -106,5 +107,11 @@
 
 }
 .dop{
-  margin-left: 53%;
+  margin-left: 48%;
+}
+.dop1{
+  margin-left: 39%;
+}
+.dop2{
+  margin-left: 45%;
 }
