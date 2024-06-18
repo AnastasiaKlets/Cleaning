@@ -16,9 +16,6 @@ $(window).scroll(function() {
 
 $('input[name="phone"]').mask("+375(99)999-99-99");
 
-let baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-let newUrl = baseUrl;
-history.pushState(null, null, newUrl);
 
 let utms_names = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
 
