@@ -19,15 +19,7 @@
       }
     }
   }
-  .prise .services_wrapper_container1_block_text {
-    width: 97.5%;
-  }
-  .prise .services_wrapper_container1_block_title {
-    width: 95%;
-  }
-  .prise .services_wrapper_container1_block_title_text {
-    width: 100%;
-  }
+
   .prise .services_wrapper_container1 {
     padding: 13px 0 13px 10px;
   }
@@ -35,7 +27,7 @@
     padding: 21px 0 26px;
   }
   .prise .services_wrapper_container1_title_text {
-    width: 49%;
+    width: 40%;
   }
   .dopClining{
     margin-left: 10%;
@@ -46,17 +38,26 @@
     flex-direction: column;
   }
   .dop5{
-    margin-left: 30%;
+    position: absolute;
+    right: 8%;
+    width: 26%;
   }
   .dop6{
-      margin-left: 21%;
+    position: absolute;
+    right: 8%;
+    width: 26%;
   }
   .dop9{
-    margin-left: 46%;
+    position: absolute;
+    right: 8%;
+    width: 26%;
   }
   .dop8{
-    margin-left: 12%;
+    position: absolute;
+    right: 8%;
+    width: 26%;
   }
+
 }
 @media (max-width: 768px) {
   .prise .services_wrapper_container1_block_text {
@@ -65,15 +66,14 @@
 }
 @media (max-width: 480px) {
   .prise .services_wrapper_container1_block_text {
-    width: 94.5%;
-    padding: 14px 0 14px 18px;
+    width: 98.5%;
+    padding: 14px 0 14px 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .prise .services_wrapper_container1_block_title {
-    width: 95%;
-  }
-  .prise .services_wrapper_container1_block_title_text {
-    width: 80%;
-  }
+
   .prise .services_wrapper_container1 {
     padding: 13px 0 13px 5px;
     width: 99%;
@@ -81,24 +81,14 @@
   .prise .services_wrapper_container1_title {
     padding: 21px 0 26px;
   }
-  .dop{
-    margin-left: 8%;
-  }
-  .dop1{
-    margin-left: 9%;
-  }
-  .dop2{
-    margin-left: 5%;
-  }
-  .prise .services_wrapper_container1_block_title{
 
+  .prise .services_wrapper_container1_block_title{
     grid-template-columns: 35% 86%;
   }
   .prise .services_wrapper_container1_block_title span{
     padding: 0 0 0 6px;
   }
   .prise .services_wrapper_container1_block_list {
-
     padding: 14px 0 4px 10px;
   }
   .prise_img5 {
@@ -107,5 +97,41 @@
     right: 0;
     top: 99%;
     width: 40%;
+  }
+  .dop5{
+    position: relative;
+    right: -55%;
+    width: 26%;
+  }
+  .dop6{
+    position: relative;
+    right: -55%;
+    width: 26%;
+  }
+  .dop9{
+    position: relative;
+    right: -55%;
+    width: 26%;
+  }
+  .dop8{
+    position: relative;
+    right: -55%;
+    width: 26%;
+  }
+  .dop10{
+    position: relative;
+    right: -55%;
+    width: 26%;
+  }
+  .dop11{
+    position: relative;
+    right: -51%;
+    width: 26%;
+  }
+  .prise .services_wrapper_container1_block_title_text {
+    width: 52%;
+  }
+  .prise .services_wrapper_container1_block_text span {
+    width: 49%;
   }
 }

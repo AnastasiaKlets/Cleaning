@@ -31,7 +31,7 @@
           padding: 20px 0 0;
           span{
             line-height: 125%;
-            padding: 0 0 0 20px;
+            padding: 0 0 0 18px;
           }
           &_text{
             display: flex;
@@ -52,11 +52,12 @@
           align-items: center;
           padding: 14px 0 14px 14px;
           span{ width: fit-content}
+          position: relative;
         }
         &_list{
           display: flex;
           flex-direction: column;
-          padding: 14px 0 4px 30px;
+          padding: 14px 0 4px 18px;
           ol{
             padding-bottom: 10px ;
           }
@@ -112,18 +113,24 @@
 }
 .dop{
   margin-left: 48%;
+  margin-right: 2%;
 }
 .dop1{
   margin-left: 39%;
+  margin-right: 2%;
 }
 .dop2{
   margin-left: 45%;
+  margin-right: 2%;
 }
 .dopClining{
   margin-left: 41%;
+  margin-right: 2%;
 }
 .dopClining2{
   margin-left: 40%;
+  margin-right: 2%;
+
 }
 .dopClining3{
   margin-right: 5%;
@@ -133,14 +140,22 @@
 }
 
 .dop5{
-  margin-left: 41%;
+  position: absolute;
+  right: 2%;
+  width: 30%;
 }
 .dop6{
-  margin-left: 55%;
+  position: absolute;
+  right: 2%;
+  width:30%;
 }
 .dop9{
-  margin-left: 56%;
+  position: absolute;
+  right: 2%;
+  width: 30%;
 }
 .dop8{
-  margin-left: 50%;
+  position: absolute;
+  right: 2%;
+  width: 30%;
 }
